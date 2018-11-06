@@ -44,7 +44,7 @@ public class SeleniumSmoke {
 		Assert.assertEquals(
 				"Selenium IDE is a Chrome and Firefox plugin which records and plays back user interactions with the browser. Use this to either create simple scripts or assist in exploratory testing.",
 				driver.findElement(By.cssSelector("a[name=\"selenium_ide\"] > p")).getText());
-		Thread.sleep(4000);
+		Thread.sleep(3000);
 		driver.quit();
 	}
 
