@@ -1,0 +1,25 @@
+<html>
+<head>
+<script type="text/javascript">
+  function max() {
+    var m = Number.NEGATIVE_INFINITY;
+    for (var i = 0; i < arguments.length; i++) {
+        if (arguments[i] > m) m = arguments[i];
+    }
+    return m;
+  }
+  //alert(" max= "+max(3,1,8,4,2,0) );
+  function max2() { return max(3,1,8,4,2,0) }
+</script>
+
+</head>
+
+<body>
+
+ <h1>HELLO</h1>
+ <br>
+ <input type="button" value="ClickMe" onClick="alert(' max= ' + max2() )" />
+ <br>
+
+</body>
+</html>

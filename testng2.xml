@@ -10,7 +10,7 @@
 					<include name="testApp" />
 				</methods>
 			</class>
-			<class name="com.softserve.edu.SeleniumSmoke" />
+			<class name="com.softserve.edu.AjaxTest" />
 		</classes>
 	</test> <!-- Test -->
 
