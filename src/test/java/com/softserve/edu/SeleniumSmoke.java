@@ -29,12 +29,18 @@ public class SeleniumSmoke {
 		//driver.findElement(By.id("lst-ib")).sendKeys("selenium" + Keys.ENTER);
 		driver.findElement(By.id("lst-ib")).sendKeys("selenium");
 		driver.findElement(By.id("lst-ib")).submit();
+		//
+		System.out.println("Google First TITLLE: " + driver.getTitle());
+		//
 		Thread.sleep(1000); // Do not use
+		System.out.println("Google Second TITLLE: " + driver.getTitle());
+		//
 		//driver.findElement(By.id("mKlEF")).click();
 		Thread.sleep(1000); // Do not use
 		driver.findElement(By.xpath("//a/h3[text()='Selenium - Web Browser Automation']/..")).click();
 		Thread.sleep(1000); // Do not use
 		driver.findElement(By.linkText("Download")).click();
+		System.out.println("Download TITLLE: " + driver.getTitle());
 		Thread.sleep(1000); // Do not use
 		//
 		WebElement linkSelenIDE = driver.findElement(By.xpath("//a[contains(text(),'previous IDE versions here')]"));
