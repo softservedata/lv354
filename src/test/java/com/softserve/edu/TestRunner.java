@@ -7,7 +7,6 @@ import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -15,7 +14,6 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
@@ -33,10 +31,8 @@ public abstract class TestRunner {
         driver.manage().window().maximize();
     }
 
-
     @BeforeMethod
     public void getUrl() {
-        //  driver.get("http://taqc-opencart.epizy.com/");
         driver.get("http://192.168.29.130/opencart/upload/");
     }
 
@@ -50,27 +46,30 @@ public abstract class TestRunner {
         }
     }
 
-
     @AfterMethod(alwaysRun = true)
-    public void logout(){
+    public void logout() {
         driver.navigate().to("http://192.168.29.130/opencart/upload/");
         if ((driver.findElements(By.xpath("//ul[@class=\"dropdown-menu dropdown-menu-right\"]//a[contains(text(),'Login')]"))).isEmpty()) {
             driver.findElement(By.cssSelector(".fa-user + span")).click();
             driver.findElement(By.xpath("//ul[@class=\"dropdown-menu dropdown-menu-right\"]//a[contains(text(),'Logout')]")).click();
         }
-
     }
 
+    void downgradeImplicitWait() {
+        driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+    }
 
+    void upgradeImplicitWait() {
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    }
 
-/*
-    protected void delayExecution(int seconds) {
+    void delayExecution(int seconds) {
         try {
             Thread.sleep(seconds * 1000L); // Do not use
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-    }*/
+    }
 
     private void takeScreenshot(String fileNamePrefix) {
         File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
@@ -101,5 +100,4 @@ public abstract class TestRunner {
     public void tearDownDriver() {
         driver.quit();
     }
-
 }
