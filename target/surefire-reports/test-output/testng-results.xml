@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="66833" started-at="2018-11-16T00:01:10Z" finished-at="2018-11-16T00:02:17Z">
+  <suite name="Surefire suite" duration-ms="155706" started-at="2018-11-17T14:21:48Z" finished-at="2018-11-17T14:24:24Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="66833" started-at="2018-11-16T00:01:10Z" finished-at="2018-11-16T00:02:17Z">
+    <test name="Surefire test" duration-ms="155706" started-at="2018-11-17T14:21:48Z" finished-at="2018-11-17T14:24:24Z">
       <class name="com.softserve.edu.RegistrationTest">
-        <test-method status="PASS" signature="powerOnChromeDriver()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="powerOnChromeDriver" is-config="true" duration-ms="3119" started-at="2018-11-16T00:01:10Z" finished-at="2018-11-16T00:01:13Z">
+        <test-method status="PASS" signature="powerOnChromeDriver()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="powerOnChromeDriver" is-config="true" duration-ms="8748" started-at="2018-11-17T14:21:48Z" finished-at="2018-11-17T14:21:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- powerOnChromeDriver -->
-        <test-method status="PASS" signature="goToRegistrationPage()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="goToRegistrationPage" is-config="true" duration-ms="2544" started-at="2018-11-16T00:01:13Z" finished-at="2018-11-16T00:01:15Z">
+        <test-method status="PASS" signature="goToRegistrationPage()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="goToRegistrationPage" is-config="true" duration-ms="7240" started-at="2018-11-17T14:21:57Z" finished-at="2018-11-17T14:22:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToRegistrationPage -->
-        <test-method status="PASS" signature="duplicateEmailInRegistration()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="duplicateEmailInRegistration" duration-ms="7973" started-at="2018-11-16T00:01:15Z" finished-at="2018-11-16T00:01:23Z">
+        <test-method status="PASS" signature="duplicateEmailInRegistration()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="duplicateEmailInRegistration" duration-ms="12244" started-at="2018-11-17T14:22:04Z" finished-at="2018-11-17T14:22:16Z">
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[Your Account Has Been Created!]]>
+              <![CDATA[Your Account Hasn't Been Created!]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: Your Account Has Been Created!
+              <![CDATA[java.lang.IllegalStateException: Your Account Hasn't Been Created!
 at org.apache.http.util.Asserts.check(Asserts.java:34)
-at com.softserve.edu.RegistrationTest.duplicateEmailInRegistration(RegistrationTest.java:230)
+at com.softserve.edu.RegistrationTest.duplicateEmailInRegistration(RegistrationTest.java:337)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -60,59 +60,59 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- duplicateEmailInRegistration -->
-        <test-method status="PASS" signature="quitRegistration()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="quitRegistration" is-config="true" duration-ms="1" started-at="2018-11-16T00:01:23Z" finished-at="2018-11-16T00:01:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitRegistration -->
-        <test-method status="PASS" signature="goToRegistrationPage()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="goToRegistrationPage" is-config="true" duration-ms="596" started-at="2018-11-16T00:01:23Z" finished-at="2018-11-16T00:01:24Z">
+        <test-method status="PASS" signature="goToRegistrationPage()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="goToRegistrationPage" is-config="true" duration-ms="2855" started-at="2018-11-17T14:22:16Z" finished-at="2018-11-17T14:22:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToRegistrationPage -->
-        <test-method status="PASS" signature="equivalencePartitioningTestInputValues()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="equivalencePartitioningTestInputValues" duration-ms="3344" started-at="2018-11-16T00:01:24Z" finished-at="2018-11-16T00:01:27Z">
+        <test-method status="PASS" signature="quitRegistration()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="quitRegistration" is-config="true" duration-ms="0" started-at="2018-11-17T14:22:16Z" finished-at="2018-11-17T14:22:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitRegistration -->
+        <test-method status="PASS" signature="equivalencePartitioningTestInputValues()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="equivalencePartitioningTestInputValues" duration-ms="10846" started-at="2018-11-17T14:22:19Z" finished-at="2018-11-17T14:22:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- equivalencePartitioningTestInputValues -->
-        <test-method status="PASS" signature="goToRegistrationPage()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="goToRegistrationPage" is-config="true" duration-ms="550" started-at="2018-11-16T00:01:27Z" finished-at="2018-11-16T00:01:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToRegistrationPage -->
-        <test-method status="PASS" signature="quitRegistration()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="quitRegistration" is-config="true" duration-ms="0" started-at="2018-11-16T00:01:27Z" finished-at="2018-11-16T00:01:27Z">
+        <test-method status="PASS" signature="quitRegistration()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="quitRegistration" is-config="true" duration-ms="0" started-at="2018-11-17T14:22:30Z" finished-at="2018-11-17T14:22:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitRegistration -->
-        <test-method status="PASS" signature="maximumInputBV()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="maximumInputBV" duration-ms="6066" started-at="2018-11-16T00:01:28Z" finished-at="2018-11-16T00:01:34Z">
+        <test-method status="PASS" signature="goToRegistrationPage()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="goToRegistrationPage" is-config="true" duration-ms="2196" started-at="2018-11-17T14:22:30Z" finished-at="2018-11-17T14:22:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToRegistrationPage -->
+        <test-method status="PASS" signature="maximumInputBV()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="maximumInputBV" duration-ms="25668" started-at="2018-11-17T14:22:32Z" finished-at="2018-11-17T14:22:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- maximumInputBV -->
-        <test-method status="PASS" signature="quitRegistration()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="quitRegistration" is-config="true" duration-ms="0" started-at="2018-11-16T00:01:34Z" finished-at="2018-11-16T00:01:34Z">
+        <test-method status="PASS" signature="quitRegistration()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="quitRegistration" is-config="true" duration-ms="0" started-at="2018-11-17T14:22:58Z" finished-at="2018-11-17T14:22:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitRegistration -->
-        <test-method status="PASS" signature="goToRegistrationPage()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="goToRegistrationPage" is-config="true" duration-ms="540" started-at="2018-11-16T00:01:34Z" finished-at="2018-11-16T00:01:35Z">
+        <test-method status="PASS" signature="goToRegistrationPage()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="goToRegistrationPage" is-config="true" duration-ms="2431" started-at="2018-11-17T14:22:58Z" finished-at="2018-11-17T14:23:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToRegistrationPage -->
-        <test-method status="PASS" signature="minimumInputBV()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="minimumInputBV" duration-ms="3002" started-at="2018-11-16T00:01:35Z" finished-at="2018-11-16T00:01:38Z">
+        <test-method status="PASS" signature="minimumInputBV()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="minimumInputBV" duration-ms="9189" started-at="2018-11-17T14:23:00Z" finished-at="2018-11-17T14:23:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- minimumInputBV -->
-        <test-method status="PASS" signature="goToRegistrationPage()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="goToRegistrationPage" is-config="true" duration-ms="516" started-at="2018-11-16T00:01:38Z" finished-at="2018-11-16T00:01:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToRegistrationPage -->
-        <test-method status="PASS" signature="quitRegistration()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="quitRegistration" is-config="true" duration-ms="0" started-at="2018-11-16T00:01:38Z" finished-at="2018-11-16T00:01:38Z">
+        <test-method status="PASS" signature="quitRegistration()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="quitRegistration" is-config="true" duration-ms="1" started-at="2018-11-17T14:23:10Z" finished-at="2018-11-17T14:23:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitRegistration -->
-        <test-method status="PASS" signature="overMaximumInputBV()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="overMaximumInputBV" duration-ms="10948" started-at="2018-11-16T00:01:38Z" finished-at="2018-11-16T00:01:49Z">
+        <test-method status="PASS" signature="goToRegistrationPage()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="goToRegistrationPage" is-config="true" duration-ms="2291" started-at="2018-11-17T14:23:10Z" finished-at="2018-11-17T14:23:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToRegistrationPage -->
+        <test-method status="PASS" signature="overMaximumInputBV()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="overMaximumInputBV" duration-ms="25047" started-at="2018-11-17T14:23:12Z" finished-at="2018-11-17T14:23:37Z">
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[Your Account Has Been Created!]]>
+              <![CDATA[Your Account Hasn't Been Created!]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: Your Account Has Been Created!
+              <![CDATA[java.lang.IllegalStateException: Your Account Hasn't Been Created!
 at org.apache.http.util.Asserts.check(Asserts.java:34)
-at com.softserve.edu.RegistrationTest.overMaximumInputBV(RegistrationTest.java:678)
+at com.softserve.edu.RegistrationTest.overMaximumInputBV(RegistrationTest.java:785)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -149,23 +149,23 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- overMaximumInputBV -->
-        <test-method status="PASS" signature="goToRegistrationPage()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="goToRegistrationPage" is-config="true" duration-ms="597" started-at="2018-11-16T00:01:49Z" finished-at="2018-11-16T00:01:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToRegistrationPage -->
-        <test-method status="PASS" signature="quitRegistration()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="quitRegistration" is-config="true" duration-ms="0" started-at="2018-11-16T00:01:49Z" finished-at="2018-11-16T00:01:49Z">
+        <test-method status="PASS" signature="quitRegistration()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="quitRegistration" is-config="true" duration-ms="0" started-at="2018-11-17T14:23:37Z" finished-at="2018-11-17T14:23:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitRegistration -->
-        <test-method status="PASS" signature="registrationWithOutPrivacyPolicyButton()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="registrationWithOutPrivacyPolicyButton" duration-ms="7746" started-at="2018-11-16T00:01:50Z" finished-at="2018-11-16T00:01:57Z">
+        <test-method status="PASS" signature="goToRegistrationPage()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="goToRegistrationPage" is-config="true" duration-ms="2258" started-at="2018-11-17T14:23:37Z" finished-at="2018-11-17T14:23:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToRegistrationPage -->
+        <test-method status="PASS" signature="registrationWithOutPrivacyPolicyButton()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="registrationWithOutPrivacyPolicyButton" duration-ms="10551" started-at="2018-11-17T14:23:39Z" finished-at="2018-11-17T14:23:50Z">
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[Your Account Has Been Created!]]>
+              <![CDATA[Your Account Hasn't Been Created!]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: Your Account Has Been Created!
+              <![CDATA[java.lang.IllegalStateException: Your Account Hasn't Been Created!
 at org.apache.http.util.Asserts.check(Asserts.java:34)
-at com.softserve.edu.RegistrationTest.registrationWithOutPrivacyPolicyButton(RegistrationTest.java:303)
+at com.softserve.edu.RegistrationTest.registrationWithOutPrivacyPolicyButton(RegistrationTest.java:410)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -202,35 +202,35 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationWithOutPrivacyPolicyButton -->
-        <test-method status="PASS" signature="quitRegistration()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="quitRegistration" is-config="true" duration-ms="0" started-at="2018-11-16T00:01:57Z" finished-at="2018-11-16T00:01:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitRegistration -->
-        <test-method status="PASS" signature="goToRegistrationPage()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="goToRegistrationPage" is-config="true" duration-ms="587" started-at="2018-11-16T00:01:57Z" finished-at="2018-11-16T00:01:58Z">
+        <test-method status="PASS" signature="goToRegistrationPage()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="goToRegistrationPage" is-config="true" duration-ms="2200" started-at="2018-11-17T14:23:50Z" finished-at="2018-11-17T14:23:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToRegistrationPage -->
-        <test-method status="PASS" signature="trueRegistrationTest()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="trueRegistrationTest" duration-ms="3124" started-at="2018-11-16T00:01:58Z" finished-at="2018-11-16T00:02:01Z">
+        <test-method status="PASS" signature="quitRegistration()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="quitRegistration" is-config="true" duration-ms="0" started-at="2018-11-17T14:23:50Z" finished-at="2018-11-17T14:23:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitRegistration -->
+        <test-method status="PASS" signature="trueRegistrationTest()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="trueRegistrationTest" duration-ms="10013" started-at="2018-11-17T14:23:52Z" finished-at="2018-11-17T14:24:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- trueRegistrationTest -->
-        <test-method status="PASS" signature="quitRegistration()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="quitRegistration" is-config="true" duration-ms="0" started-at="2018-11-16T00:02:01Z" finished-at="2018-11-16T00:02:01Z">
+        <test-method status="PASS" signature="quitRegistration()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="quitRegistration" is-config="true" duration-ms="0" started-at="2018-11-17T14:24:02Z" finished-at="2018-11-17T14:24:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitRegistration -->
-        <test-method status="PASS" signature="goToRegistrationPage()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="goToRegistrationPage" is-config="true" duration-ms="522" started-at="2018-11-16T00:02:01Z" finished-at="2018-11-16T00:02:02Z">
+        <test-method status="PASS" signature="goToRegistrationPage()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="goToRegistrationPage" is-config="true" duration-ms="2438" started-at="2018-11-17T14:24:02Z" finished-at="2018-11-17T14:24:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToRegistrationPage -->
-        <test-method status="PASS" signature="unValidEmailInRegistration()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="unValidEmailInRegistration" duration-ms="7426" started-at="2018-11-16T00:02:02Z" finished-at="2018-11-16T00:02:09Z">
+        <test-method status="PASS" signature="unValidEmailInRegistration()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="unValidEmailInRegistration" duration-ms="9302" started-at="2018-11-17T14:24:04Z" finished-at="2018-11-17T14:24:14Z">
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[Your Account Has Been Created!]]>
+              <![CDATA[Your Account Hasn't Been Created!]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: Your Account Has Been Created!
+              <![CDATA[java.lang.IllegalStateException: Your Account Hasn't Been Created!
 at org.apache.http.util.Asserts.check(Asserts.java:34)
-at com.softserve.edu.RegistrationTest.unValidEmailInRegistration(RegistrationTest.java:378)
+at com.softserve.edu.RegistrationTest.unValidEmailInRegistration(RegistrationTest.java:485)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -267,23 +267,23 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- unValidEmailInRegistration -->
-        <test-method status="PASS" signature="quitRegistration()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="quitRegistration" is-config="true" duration-ms="0" started-at="2018-11-16T00:02:09Z" finished-at="2018-11-16T00:02:09Z">
+        <test-method status="PASS" signature="quitRegistration()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="quitRegistration" is-config="true" duration-ms="0" started-at="2018-11-17T14:24:14Z" finished-at="2018-11-17T14:24:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitRegistration -->
-        <test-method status="PASS" signature="goToRegistrationPage()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="goToRegistrationPage" is-config="true" duration-ms="577" started-at="2018-11-16T00:02:09Z" finished-at="2018-11-16T00:02:10Z">
+        <test-method status="PASS" signature="goToRegistrationPage()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="goToRegistrationPage" is-config="true" duration-ms="2269" started-at="2018-11-17T14:24:14Z" finished-at="2018-11-17T14:24:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToRegistrationPage -->
-        <test-method status="PASS" signature="voidRegistration()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="voidRegistration" duration-ms="6346" started-at="2018-11-16T00:02:10Z" finished-at="2018-11-16T00:02:16Z">
+        <test-method status="PASS" signature="voidRegistration()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="voidRegistration" duration-ms="6854" started-at="2018-11-17T14:24:16Z" finished-at="2018-11-17T14:24:23Z">
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[Your Account Has Been Created!]]>
+              <![CDATA[Your Account Hasn't Been Created!]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: Your Account Has Been Created!
+              <![CDATA[java.lang.IllegalStateException: Your Account Hasn't Been Created!
 at org.apache.http.util.Asserts.check(Asserts.java:34)
-at com.softserve.edu.RegistrationTest.voidRegistration(RegistrationTest.java:155)
+at com.softserve.edu.RegistrationTest.voidRegistration(RegistrationTest.java:262)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -320,14 +320,14 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- voidRegistration -->
-        <test-method status="PASS" signature="quitRegistration()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="quitRegistration" is-config="true" duration-ms="0" started-at="2018-11-16T00:02:16Z" finished-at="2018-11-16T00:02:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitRegistration -->
-        <test-method status="PASS" signature="powerOffChromeDriver()[pri:0, instance:com.softserve.edu.RegistrationTest@38203]" name="powerOffChromeDriver" is-config="true" duration-ms="693" started-at="2018-11-16T00:02:16Z" finished-at="2018-11-16T00:02:17Z">
+        <test-method status="PASS" signature="powerOffChromeDriver()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="powerOffChromeDriver" is-config="true" duration-ms="1016" started-at="2018-11-17T14:24:23Z" finished-at="2018-11-17T14:24:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- powerOffChromeDriver -->
+        <test-method status="PASS" signature="quitRegistration()[pri:0, instance:com.softserve.edu.RegistrationTest@c285f4]" name="quitRegistration" is-config="true" duration-ms="0" started-at="2018-11-17T14:24:23Z" finished-at="2018-11-17T14:24:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitRegistration -->
       </class> <!-- com.softserve.edu.RegistrationTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->

@@ -1,28 +1,28 @@
 package com.softserve.edu;
 
-import org.apache.http.util.Asserts;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 import java.util.concurrent.TimeUnit;
 
 public class RegistrationTest {
     private WebDriver driver;
-    @BeforeTest
+    //@BeforeTest
     public void prepareForTest(){
         System.setProperty("webdriver.chrome.driver",
                 this.getClass().getResource("/chromedriver-windows-32bit.exe").getPath().substring(1));
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-        driver.get("http://192.168.234.130/opencart/upload/");
+        driver.get("http://taqc-opencart.epizy.com/");
         driver.findElement(By.name("search")).click();
 
         driver.findElement(By.cssSelector("#top-links .dropdown-toggle")).click();
         driver.findElement(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Register']")).click();
-        Asserts.check((driver.findElements(By.cssSelector("#content h1")).size() != 0), "Register page not found");
+        Assert.assertTrue((driver.findElements(By.cssSelector("#content h1")).size() != 0), "Register page not found");
         driver.findElement(By.name("firstname")).click();
         driver.findElement(By.name("firstname")).clear();
         driver.findElement(By.name("firstname")).sendKeys("test1");
@@ -85,15 +85,15 @@ public class RegistrationTest {
 
         driver.findElement(By.cssSelector(".btn.btn-primary")).click();
 
-        Asserts.check((driver.findElements(By.xpath("//div[@class = 'col-sm-9']//h1[text()='Your Account Has Been Created!']")).size() != 0), "Your Account Hasn't Been Created!");
+        Assert.assertTrue((driver.findElements(By.xpath("//div[@class = 'col-sm-9']//h1[text()='Your Account Has Been Created!']")).size() != 0), "Your Account Hasn't Been Created!");
         driver.findElement(By.cssSelector(".btn.btn-primary")).click();
 
         driver.findElement(By.cssSelector("#top-links .dropdown-toggle")).click();
         driver.findElement(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Logout']")).click();
-        Asserts.check((driver.findElements(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Register']")).size() != 0), "Register button not found");
+        Assert.assertTrue((driver.findElements(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Register']")).size() != 0), "Register button not found");
         driver.quit();
     }
-    @AfterTest
+    //@AfterTest
     public void stripping(){
         System.setProperty("webdriver.chrome.driver",
                 this.getClass().getResource("/chromedriver-windows-32bit.exe").getPath().substring(1));
@@ -133,13 +133,13 @@ public class RegistrationTest {
 
     @BeforeMethod
     public void goToRegistrationPage() {
-        driver.get("http://192.168.234.130/opencart/upload/");
+        driver.get("http://taqc-opencart.epizy.com/");
 
         driver.findElement(By.name("search")).click();
 
         driver.findElement(By.cssSelector("#top-links .dropdown-toggle")).click();
         driver.findElement(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Register']")).click();
-        Asserts.check((driver.findElements(By.cssSelector("#content h1")).size() != 0), "Register page not found");
+        Assert.assertTrue((driver.findElements(By.cssSelector("#content h1")).size() != 0), "Register page not found");
     }
 
     @AfterMethod
@@ -212,12 +212,12 @@ public class RegistrationTest {
 
         driver.findElement(By.cssSelector(".btn.btn-primary")).click();
 
-        Asserts.check((driver.findElements(By.xpath("//div[@class = 'col-sm-9']//h1[text()='Your Account Has Been Created!']")).size() != 0), "Your Account Hasn't Been Created!");
+        Assert.assertTrue((driver.findElements(By.xpath("//div[@class = 'col-sm-9']//h1[text()='Your Account Has Been Created!']")).size() != 0), "Your Account Hasn't Been Created!");
         driver.findElement(By.cssSelector(".btn.btn-primary")).click();
 
         driver.findElement(By.cssSelector("#top-links .dropdown-toggle")).click();
         driver.findElement(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Logout']")).click();
-        Asserts.check((driver.findElements(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Register']")).size() != 0), "Register button not found");
+        Assert.assertTrue((driver.findElements(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Register']")).size() != 0), "Register button not found");
     }
 
     /////////////////////////////////////////////////////////////////////////////
@@ -259,12 +259,12 @@ public class RegistrationTest {
         //Accept
         driver.findElement(By.name("agree")).click();
         driver.findElement(By.cssSelector(".btn.btn-primary")).click();
-        Asserts.check((driver.findElements(By.xpath("//div[@class = 'col-sm-9']//h1[text()='Your Account Has Been Created!']")).size() != 0), "Your Account Hasn't Been Created!");
+        Assert.assertTrue((driver.findElements(By.xpath("//div[@class = 'col-sm-9']//h1[text()='Your Account Has Been Created!']")).size() != 0), "Your Account Hasn't Been Created!");
         driver.findElement(By.cssSelector(".btn.btn-primary")).click();
 
         driver.findElement(By.cssSelector("#top-links .dropdown-toggle")).click();
         driver.findElement(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Logout']")).click();
-        Asserts.check((driver.findElements(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Register']")).size() != 0), "Register button not found");
+        Assert.assertTrue((driver.findElements(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Register']")).size() != 0), "Register button not found");
     }
 
     /////////////////////////////////////////////////////////////////////////////
@@ -334,12 +334,12 @@ public class RegistrationTest {
 
         driver.findElement(By.cssSelector(".btn.btn-primary")).click();
 
-        Asserts.check((driver.findElements(By.xpath("//div[@class = 'col-sm-9']//h1[text()='Your Account Has Been Created!']")).size() != 0), "Your Account Hasn't Been Created!");
+        Assert.assertTrue((driver.findElements(By.xpath("//div[@class = 'col-sm-9']//h1[text()='Your Account Has Been Created!']")).size() != 0), "Your Account Hasn't Been Created!");
         driver.findElement(By.cssSelector(".btn.btn-primary")).click();
 
         driver.findElement(By.cssSelector("#top-links .dropdown-toggle")).click();
         driver.findElement(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Logout']")).click();
-        Asserts.check((driver.findElements(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Register']")).size() != 0), "Register button not found");
+        Assert.assertTrue((driver.findElements(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Register']")).size() != 0), "Register button not found");
     }
 
     /////////////////////////////////////////////////////////////////////////////
@@ -407,12 +407,12 @@ public class RegistrationTest {
         //Accept
         driver.findElement(By.cssSelector(".btn.btn-primary")).click();
 
-        Asserts.check((driver.findElements(By.xpath("//div[@class = 'col-sm-9']//h1[text()='Your Account Has Been Created!']")).size() != 0), "Your Account Hasn't Been Created!");
+        Assert.assertTrue((driver.findElements(By.xpath("//div[@class = 'col-sm-9']//h1[text()='Your Account Has Been Created!']")).size() != 0), "Your Account Hasn't Been Created!");
         driver.findElement(By.cssSelector(".btn.btn-primary")).click();
 
         driver.findElement(By.cssSelector("#top-links .dropdown-toggle")).click();
         driver.findElement(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Logout']")).click();
-        Asserts.check((driver.findElements(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Register']")).size() != 0), "Register button not found");
+        Assert.assertTrue((driver.findElements(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Register']")).size() != 0), "Register button not found");
     }
 
     /////////////////////////////////////////////////////////////////////////////
@@ -482,12 +482,12 @@ public class RegistrationTest {
 
         driver.findElement(By.cssSelector(".btn.btn-primary")).click();
 
-        Asserts.check((driver.findElements(By.xpath("//div[@class = 'col-sm-9']//h1[text()='Your Account Has Been Created!']")).size() != 0), "Your Account Hasn't Been Created!");
+        Assert.assertTrue((driver.findElements(By.xpath("//div[@class = 'col-sm-9']//h1[text()='Your Account Has Been Created!']")).size() != 0), "Your Account Hasn't Been Created!");
         driver.findElement(By.cssSelector(".btn.btn-primary")).click();
 
         driver.findElement(By.cssSelector("#top-links .dropdown-toggle")).click();
         driver.findElement(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Logout']")).click();
-        Asserts.check((driver.findElements(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Register']")).size() != 0), "Register button not found");
+        Assert.assertTrue((driver.findElements(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Register']")).size() != 0), "Register button not found");
     }
 
     /////////////////////////////////////////////////////////////////////////////
@@ -557,12 +557,12 @@ public class RegistrationTest {
 
         driver.findElement(By.cssSelector(".btn.btn-primary")).click();
 
-        Asserts.check((driver.findElements(By.xpath("//div[@class = 'col-sm-9']//h1[text()='Your Account Has Been Created!']")).size() != 0), "Your Account Hasn't Been Created!");
+        Assert.assertTrue((driver.findElements(By.xpath("//div[@class = 'col-sm-9']//h1[text()='Your Account Has Been Created!']")).size() != 0), "Your Account Hasn't Been Created!");
         driver.findElement(By.cssSelector(".btn.btn-primary")).click();
 
         driver.findElement(By.cssSelector("#top-links .dropdown-toggle")).click();
         driver.findElement(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Logout']")).click();
-        Asserts.check((driver.findElements(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Register']")).size() != 0), "Register button not found");
+        Assert.assertTrue((driver.findElements(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Register']")).size() != 0), "Register button not found");
     }
 
     /////////////////////////////////////////////////////////////////////////////
@@ -632,12 +632,12 @@ public class RegistrationTest {
 
         driver.findElement(By.cssSelector(".btn.btn-primary")).click();
 
-        Asserts.check((driver.findElements(By.xpath("//div[@class = 'col-sm-9']//h1[text()='Your Account Has Been Created!']")).size() != 0), "Your Account Hasn't Been Created!");
+        Assert.assertTrue((driver.findElements(By.xpath("//div[@class = 'col-sm-9']//h1[text()='Your Account Has Been Created!']")).size() != 0), "Your Account Hasn't Been Created!");
         driver.findElement(By.cssSelector(".btn.btn-primary")).click();
 
         driver.findElement(By.cssSelector("#top-links .dropdown-toggle")).click();
         driver.findElement(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Logout']")).click();
-        Asserts.check((driver.findElements(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Register']")).size() != 0), "Register button not found");
+        Assert.assertTrue((driver.findElements(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Register']")).size() != 0), "Register button not found");
     }
 
     /////////////////////////////////////////////////////////////////////////////
@@ -707,12 +707,12 @@ public class RegistrationTest {
 
         driver.findElement(By.cssSelector(".btn.btn-primary")).click();
 
-        Asserts.check((driver.findElements(By.xpath("//div[@class = 'col-sm-9']//h1[text()='Your Account Has Been Created!']")).size() != 0), "Your Account Hasn't Been Created!");
+        Assert.assertTrue((driver.findElements(By.xpath("//div[@class = 'col-sm-9']//h1[text()='Your Account Has Been Created!']")).size() != 0), "Your Account Hasn't Been Created!");
         driver.findElement(By.cssSelector(".btn.btn-primary")).click();
 
         driver.findElement(By.cssSelector("#top-links .dropdown-toggle")).click();
         driver.findElement(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Logout']")).click();
-        Asserts.check((driver.findElements(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Register']")).size() != 0), "Register button not found");
+        Assert.assertTrue((driver.findElements(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Register']")).size() != 0), "Register button not found");
     }
 
     /////////////////////////////////////////////////////////////////////////////
@@ -782,11 +782,11 @@ public class RegistrationTest {
 
         driver.findElement(By.cssSelector(".btn.btn-primary")).click();
 
-        Asserts.check((driver.findElements(By.xpath("//div[@class = 'col-sm-9']//h1[text()='Your Account Has Been Created!']")).size() != 0), "Your Account Hasn't Been Created!");
+        Assert.assertTrue((driver.findElements(By.xpath("//div[@class = 'col-sm-9']//h1[text()='Your Account Has Been Created!']")).size() != 0), "Your Account Hasn't Been Created!");
         driver.findElement(By.cssSelector(".btn.btn-primary")).click();
 
         driver.findElement(By.cssSelector("#top-links .dropdown-toggle")).click();
         driver.findElement(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Logout']")).click();
-        Asserts.check((driver.findElements(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Register']")).size() != 0), "Register button not found");
+        Assert.assertTrue((driver.findElements(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[text()='Register']")).size() != 0), "Register button not found");
     }
 }

@@ -3,19 +3,17 @@
 <suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
   <test thread-count="1" verbose="0" name="Surefire test(failed)">
     <classes>
-      <class name="local.alpha.test.MavenTest">
+      <class name="com.softserve.edu.RegistrationTest">
         <methods>
-          <include name="powerOnChromeDriverTest"/>
-          <include name="powerOffChromeDriverTest"/>
-          <include name="trueTestRegestrationTest"/>
+          <include name="goToRegistrationPage"/>
+          <include name="maximumInputBV"/>
+          <include name="powerOffChromeDriver"/>
+          <include name="prepareForTest"/>
+          <include name="unValidEmailInRegistration"/>
+          <include name="powerOnChromeDriver"/>
+          <include name="quitRegistration"/>
         </methods>
-      </class> <!-- local.alpha.test.MavenTest -->
-      <class name="local.alpha.test.AlphaTest">
-        <methods>
-          <include name="powerUpChromeDriver"/>
-          <include name="trueTestRegestration"/>
-        </methods>
-      </class> <!-- local.alpha.test.AlphaTest -->
+      </class> <!-- com.softserve.edu.RegistrationTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
