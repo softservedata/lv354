@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="73934" started-at="2018-11-09T10:29:13Z" finished-at="2018-11-09T10:30:27Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="73934" started-at="2018-11-09T10:29:13Z" finished-at="2018-11-09T10:30:27Z">
+      <class name="com.softserve.edu.SeleniumSmoke">
+        <test-method status="PASS" signature="testSeleniumSmoke()[pri:0, instance:com.softserve.edu.SeleniumSmoke@11438d26]" name="testSeleniumSmoke" duration-ms="73896" started-at="2018-11-09T10:29:13Z" finished-at="2018-11-09T10:30:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSeleniumSmoke -->
+      </class> <!-- com.softserve.edu.SeleniumSmoke -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite1 -->
+</testng-results>
