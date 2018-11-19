@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="OpenCartSuite">
+
+    <test name="OpenCartTest">
+        <classes>
+            <class name="com.softserve.academy.ComparisonTableTest">
+                <methods>
+                    <include name="testAddingToComparison" />
+                    <include name="testAddingTwoElements" />
+                    <include name="testAddingThreeElements" />
+                    <include name="testAddingFourElements" />
+                    <include name="testAddingToCart" />
+                    <include name="testRemovingElements" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
