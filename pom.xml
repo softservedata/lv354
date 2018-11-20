@@ -63,6 +63,11 @@
 			<artifactId>selenium-server</artifactId>
 			<version>${org.seleniumhq.selenium.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.codeborne</groupId>
+			<artifactId>phantomjsdriver</artifactId>
+			<version>1.4.1</version>
+		</dependency>
 		<!-- <dependency> -->
 		<!-- <groupId>org.seleniumhq.selenium</groupId> -->
 		<!-- <artifactId>htmlunit-driver</artifactId> -->
