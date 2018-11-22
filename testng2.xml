@@ -10,7 +10,7 @@
 					<include name="testApp" />
 				</methods>
 			</class>
-			<class name="com.softserve.edu.StartTest" />
+<!-- 			<class name="com.softserve.edu.StartTest" /> -->
 		</classes>
 	</test> <!-- Test -->
 

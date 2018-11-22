@@ -70,6 +70,7 @@ hs_err_pid*
 # Ignore binary
 /.allure/
 *.bin
+*.exe
 
 # Ignore log
 *.log
@@ -80,6 +81,9 @@ hs_err_pid*
 
 # Ignore Picture
 *.bmp
+*.png
+*.jpg
+*.jpeg
 
 # Ignore doc/notes.txt, but not doc/info/arch.txt
 # doc/*.txt

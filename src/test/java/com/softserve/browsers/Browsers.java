@@ -32,6 +32,7 @@ import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.remote.service.DriverService;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -39,7 +40,8 @@ import org.testng.annotations.Test;
 
 public class Browsers {
 	private final String TIME_TEMPLATE = "yyyy-MM-dd_HH-mm-ss";
-	public static ChromeDriverService service;
+	//public static ChromeDriverService service;
+	public static DriverService service;
 
 	private void takeScreenShot(WebDriver driver) throws IOException {
 		String currentTime = new SimpleDateFormat(TIME_TEMPLATE).format(new Date());
@@ -419,7 +421,8 @@ public class Browsers {
 	public void testChrome5() throws Exception {
 		// Firefox https://developer.mozilla.org/en-US/Firefox/Headless_mode
 		// Chrome https://peter.sh/experiments/chromium-command-line-switches/
-		System.setProperty("webdriver.chrome.driver",
+		//System.setProperty("webdriver.chrome.driver",
+		System.setProperty(ChromeDriverService.CHROME_DRIVER_EXE_PROPERTY,
 				"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--headless"); // Chrome Without UI
@@ -442,11 +445,11 @@ public class Browsers {
 
 	// Use Selenium 2.52; Must be fixed for 3.x.x
 	// Working properly by Selenium 3.14.0;
-	@Test
+	// @Test
 	public void testHtmlUnit() throws Exception {
 		// WebDriver driver = new FirefoxDriver();
 		WebDriver driver = new HtmlUnitDriver(true);
-		((HtmlUnitDriver) driver).setJavascriptEnabled(true); // Enable CSS
+		((HtmlUnitDriver) driver).setJavascriptEnabled(true); // TODO Enable CSS
 		//
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.manage().timeouts().setScriptTimeout(5, TimeUnit.SECONDS);
@@ -480,7 +483,7 @@ public class Browsers {
 	// Download from http://phantomjs.org/download.html
 	// Download from phantomjsdriver-1.4.4.jar https://mvnrepository.com/artifact/com.codeborne/phantomjsdriver/1.4.4
 	// Use Selenium 3.0.1, 3.x.x; Do not use Selenium 2.5.x
-	//@Test
+	// @Test
 	public void testPhantomjs() throws Exception {
 		System.setProperty("phantomjs.binary.path",
 				"./lib/phantomjs.exe");
@@ -524,11 +527,12 @@ public class Browsers {
 		driver.quit();
 	}
 
-	//@BeforeClass
+	@BeforeClass
 	public void createService() throws Exception {
 		service = new ChromeDriverService.Builder()
 				//.usingDriverExecutable(new File("./lib/chromedriver.exe"))
-				.usingDriverExecutable(new File("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe"))
+				//.usingDriverExecutable(new File("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe"))
+				.usingDriverExecutable(new File(this.getClass().getResource("/chromedriver-windows-32bit.exe").getPath()))
 				// .usingAnyFreePort()
 				.usingPort(8888)
 				.build();
@@ -536,7 +540,7 @@ public class Browsers {
 		System.out.println("\t+++Service Start");
 	}
 
-	//@Test
+	@Test
 	public void testRemout() throws Exception {
 		//
 		ChromeOptions options = new ChromeOptions();
@@ -568,7 +572,7 @@ public class Browsers {
 		System.out.println("\t+++driver.quit()");
 	}
 
-	//@AfterClass
+	@AfterClass
 	public void StopService() {
 		if (service != null) {
 			service.stop();
