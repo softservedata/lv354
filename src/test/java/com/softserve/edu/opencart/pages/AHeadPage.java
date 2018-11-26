@@ -6,11 +6,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import com.softserve.edu.opencart.data.product.Currencies;
 import com.softserve.edu.opencart.pages.cart.PopupShoppingCartComponent;
 
 public abstract class AHeadPage {
 	protected final String TAG_ATTRIBUTE_VALUE = "value";
-
+	protected final String OPTION_NULL_MESSAGE = "DropdownOption is null";
+	protected final String OPTION_NOT_FOUND_MESSAGE = "Option %s not found in %s";
+	//
+	protected final String LIST_CURENCIES_BYCSS = "div.btn-group.open ul.dropdown-menu li";
+	//
 	protected WebDriver driver;
 	//
 	private WebElement currency;
@@ -22,8 +27,8 @@ public abstract class AHeadPage {
 	private WebElement searchProductField;
 	private WebElement searchProductButton;
 	private WebElement cartButton;
-	private List<MainMenuComponent> menuTop;
 	//
+	private List<MainMenuComponent> menuTop;
 	private DropdownMenuComponent dropdownOptions;
 	private PopupShoppingCartComponent dropdownCart;
 
@@ -179,9 +184,66 @@ public abstract class AHeadPage {
 	}
 
 	// menuTop
-	// dropdownOptions
+	// TODO
+
 	// dropdownCart
+	// TODO
+
+	// Functional Operations
+
+	// dropdownOptions
+	protected DropdownMenuComponent getDropdownOptions() {
+		if (dropdownOptions == null) {
+			// TODO Develop Custom Exception
+			throw new RuntimeException(OPTION_NULL_MESSAGE);
+		}
+		return dropdownOptions;
+	}
+
+	private DropdownMenuComponent createDropdownOptions(By searchLocator) {
+		dropdownOptions = new DropdownMenuComponent(driver, searchLocator);
+		return getDropdownOptions();
+	}
+
+	private boolean findDropdownOptionByPartialName(String optionName) {
+		boolean isFound = false;
+		for (String current : getDropdownOptions().getListOptionsText()) {
+			if (current.toLowerCase().contains(optionName.toLowerCase())) {
+				isFound = true;
+			}
+		}
+		return isFound;
+	}
+
+	private void clickDropdownOptionByPartialName(String optionName) {
+		if (!findDropdownOptionByPartialName(optionName)) {
+			// TODO Develop Custom Exception
+			throw new RuntimeException(String.format(OPTION_NOT_FOUND_MESSAGE, optionName,
+					dropdownOptions.getListOptionsText().toString()));
+		}
+		getDropdownOptions().clickDropdownOptionByPartialName(optionName);
+		dropdownOptions = null;
+	}
+
+	//protected void clickCurrencyByPartialName(String optionName) {
+	protected void clickCurrencyByPartialName(Currencies optionName) {
+		clickSearchProductField();
+		clickCurrency();
+		createDropdownOptions(By.cssSelector(LIST_CURENCIES_BYCSS));
+		clickDropdownOptionByPartialName(optionName.toString());
+	}
 
 	// Business Logic
+
+	// public LoginPage gotoLogin();
+	// public MyAccountPage gotoMyAccount();
+	// public AccountLogoutPage gotoLogout();
+
+	public HomePage gotoHome() {
+		clickLogo();
+		return new HomePage(driver);
+	}
+
+	// public ShoppingCartPage gotoShoppinCartPage();
 
 }

@@ -3,9 +3,13 @@ search		com.softserve.edu.opencart.pages.search
 leftMenu	com.softserve.edu.opencart.pages.left
 rightMenu	com.softserve.edu.opencart.pages.right
 cart		com.softserve.edu.opencart.pages.cart
+currency	com.softserve.edu.opencart.data.product;
+
+Currencies
 
 AHeadPage
 HomePage
+HomeMessagePage
 APathBarPage
 
 DropdownMenuComponent
