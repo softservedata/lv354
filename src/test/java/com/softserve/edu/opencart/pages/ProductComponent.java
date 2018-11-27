@@ -3,6 +3,8 @@ package com.softserve.edu.opencart.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import com.softserve.edu.opencart.tools.RegexUtils;
+
 public class ProductComponent {
 
 	private WebElement productLayout;
@@ -68,10 +70,6 @@ public class ProductComponent {
         return getPrice().getText();
     }
 
-    //public double getPriceAmount() {
-    //    return RegexUtils.extractFirstDouble(getPriceText());
-    //}
-
     // addToCartButton;
     public WebElement getAddToCartButton() {
         return addToCartButton;
@@ -97,6 +95,13 @@ public class ProductComponent {
 
     public void clickAddToCompareButton() {
     	getAddToCompareButton().click();
+    }
+
+	// Functional Operations
+
+    // price;
+    public double getPriceAmount() {
+        return RegexUtils.extractFirstDouble(getPriceText());
     }
 
 	// Business Logic

@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 
 import com.softserve.edu.opencart.data.product.Currencies;
 import com.softserve.edu.opencart.pages.cart.PopupShoppingCartComponent;
+import com.softserve.edu.opencart.tools.RegexUtils;
 
 public abstract class AHeadPage {
 	protected final String TAG_ATTRIBUTE_VALUE = "value";
@@ -191,6 +192,17 @@ public abstract class AHeadPage {
 
 	// Functional Operations
 
+	
+	// wishList
+	 public int getWishListItemsCount() {
+		 return RegexUtils.extractFirstNumber(getWishListText());
+	}
+	
+	// cartButton
+    public int getCartButtonItemsCount() {
+        return RegexUtils.extractFirstNumber(getCartButtonText());
+    }
+	
 	// dropdownOptions
 	protected DropdownMenuComponent getDropdownOptions() {
 		if (dropdownOptions == null) {
