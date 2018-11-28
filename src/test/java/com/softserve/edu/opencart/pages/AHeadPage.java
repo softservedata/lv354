@@ -6,8 +6,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import com.softserve.edu.opencart.data.head.LoggedMyAccount;
+import com.softserve.edu.opencart.data.head.UnloggedMyAccount;
 import com.softserve.edu.opencart.data.product.Currencies;
 import com.softserve.edu.opencart.pages.cart.PopupShoppingCartComponent;
+import com.softserve.edu.opencart.pages.right.AccountLogoutPage;
+import com.softserve.edu.opencart.pages.right.LoginPage;
 import com.softserve.edu.opencart.tools.RegexUtils;
 
 public abstract class AHeadPage {
@@ -16,6 +20,7 @@ public abstract class AHeadPage {
 	protected final String OPTION_NOT_FOUND_MESSAGE = "Option %s not found in %s";
 	//
 	protected final String LIST_CURENCIES_BYCSS = "div.btn-group.open ul.dropdown-menu li";
+	protected final String DROPDOWN_MENU_MYACCOUNT_BYCSS = ".dropdown-menu-right li";
 	//
 	protected WebDriver driver;
 	//
@@ -191,7 +196,6 @@ public abstract class AHeadPage {
 	// TODO
 
 	// Functional Operations
-
 	
 	// wishList
 	 public int getWishListItemsCount() {
@@ -237,6 +241,7 @@ public abstract class AHeadPage {
 		dropdownOptions = null;
 	}
 
+	// currency
 	//protected void clickCurrencyByPartialName(String optionName) {
 	protected void clickCurrencyByPartialName(Currencies optionName) {
 		clickSearchProductField();
@@ -245,11 +250,37 @@ public abstract class AHeadPage {
 		clickDropdownOptionByPartialName(optionName.toString());
 	}
 
+	// myAccount
+	private void clickDropdownMenuMyAccountByPartialName(String componentName) {
+		clickSearchProductField();
+		clickMyAccount();
+		createDropdownOptions(By.cssSelector(DROPDOWN_MENU_MYACCOUNT_BYCSS));
+		clickDropdownOptionByPartialName(componentName);
+	}
+
+	protected void clickUnloggedMyAccountByPartialName(UnloggedMyAccount optionName) {
+		// TODO
+		clickDropdownMenuMyAccountByPartialName(optionName.toString());
+	}
+
+	protected void clickLoggedMyAccountByPartialName(LoggedMyAccount optionName) {
+		// TODO
+		clickDropdownMenuMyAccountByPartialName(optionName.toString());
+	}
+	
 	// Business Logic
 
-	// public LoginPage gotoLogin();
+	public LoginPage gotoLogin() {
+		clickUnloggedMyAccountByPartialName(UnloggedMyAccount.LOGIN);
+		return new LoginPage(driver);	
+	}
+	
 	// public MyAccountPage gotoMyAccount();
-	// public AccountLogoutPage gotoLogout();
+
+	public AccountLogoutPage gotoLogout() {
+		clickLoggedMyAccountByPartialName(LoggedMyAccount.LOGOUT);
+		return new AccountLogoutPage(driver);	
+	}
 
 	public HomePage gotoHome() {
 		clickLogo();

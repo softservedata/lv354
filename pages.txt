@@ -38,8 +38,8 @@ AUnloggedRightMenuPage
 LoginPage
 UnsuccessfulLoginPage
 RegisterPage
+AccountLogoutPage
 
 RegistrationSuccessPage
 MyAccountPage
-
-
+AccountInformationPage
