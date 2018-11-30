@@ -5,6 +5,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.softserve.edu.opencart.data.product.Currencies;
+import com.softserve.edu.opencart.data.product.Product;
+import com.softserve.edu.opencart.data.product.ProductRepository;
 import com.softserve.edu.opencart.pages.HomeMessagePage;
 import com.softserve.edu.opencart.pages.HomePage;
 import com.softserve.edu.opencart.tools.TestRunner;
@@ -43,8 +45,10 @@ public class CurrencyTest extends TestRunner {
 	public Object[][] productCurrencyData() {
 		// Read from ...
 		return new Object[][] {
-            { Currencies.POUND_STERLING, "MacBook", 368.73 },
-            { Currencies.EURO, "MacBook", 472.33 },
+			{ Currencies.POUND_STERLING, ProductRepository.macBook() },
+			{ Currencies.EURO, ProductRepository.iPhone() }
+//            { Currencies.POUND_STERLING, "MacBook", 368.73 },
+//            { Currencies.EURO, "MacBook", 472.33 },
 //          { Currencies.US_DOLLAR, "MacBook", 602.00 },
             //{ Currencies.US_DOLLAR, "iPhone", 123.20 },
             //{ Currencies.US_DOLLAR, "Apple Cinema 30", 110.00 },
@@ -52,8 +56,9 @@ public class CurrencyTest extends TestRunner {
 			};
 	}
 
-	//@Test(dataProvider = "productCurrencyData")
-	public void checkProductCurrency(Currencies currency, String product, double price) {
+	@Test(dataProvider = "productCurrencyData")
+	//public void checkProductCurrency(Currencies currency, String product, double price) {
+	public void checkProductCurrency(Currencies currency, Product product) {
 		//
 		// Precondition
 		HomePage homePage = loadApplication();
@@ -65,8 +70,10 @@ public class CurrencyTest extends TestRunner {
 		//
 		// Check
 		Assert.assertEquals(homePage
-				.getProductComponentByPartialName(product).getPriceAmount(),
-				price, PRECISION);
+				//.getProductComponentByPartialName(product).getPriceAmount(),
+				.getProductComponentByPartialName(product.getName()).getPriceAmount(),
+				//price, PRECISION);
+				product.getPrice(currency), PRECISION);
 		delayExecution(2);
 		//
 		// Return to previous state
@@ -109,7 +116,7 @@ public class CurrencyTest extends TestRunner {
         // TODO Clear Cart
     }
 
-    @Test(dataProvider = "productNames")
+    //@Test(dataProvider = "productNames")
     public void checkProductToWishUnlogged(String partialProductName) {
         //
         // Precondition

@@ -3,6 +3,8 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.softserve.edu.opencart.data.user.IUser;
+import com.softserve.edu.opencart.data.user.UserRepository;
 import com.softserve.edu.opencart.pages.HomePage;
 import com.softserve.edu.opencart.pages.right.AccountInformationPage;
 import com.softserve.edu.opencart.pages.right.AccountLogoutPage;
@@ -14,28 +16,28 @@ public class LoginTest extends TestRunner {
     public Object[][] validUsers() {
         // Read from ...
         return new Object[][] { 
-            //{ UserRepository.get().customerHahaha() },
-        	{ "hahaha@gmail.com", "qwerty", "hahaha" },
+            { UserRepository.get().customerHahaha() },
+        	//{ "hahaha@gmail.com", "qwerty", "hahaha" },
             };
     }
 
     @Test(dataProvider = "validUsers")
-    //public void checkLogin(IUser validUser) {
-    public void checkLogin(String email, String password, String firstname) {
+    public void checkLogin(IUser validUser) {
+    //public void checkLogin(String email, String password, String firstname) {
         //
         // Precondition
         // Steps
     	AccountInformationPage accountInformationPage = loadApplication()
         		.gotoLogin()
-        		//.successLogin(validUser)
-        		.successLogin(email, password)
+        		.successLogin(validUser)
+        		//.successLogin(email, password)
         		.gotoAccountInformation();
         delayExecution(1);
         //
         // Check
         Assert.assertEquals(accountInformationPage.getFirstnameFieldText(),
-        		firstname);
-        		//validUser.getFirstName());
+        		//firstname);
+        		validUser.getFirstname());
         delayExecution(1);
         //
         // Return to previous state

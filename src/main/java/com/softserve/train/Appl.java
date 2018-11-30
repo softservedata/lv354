@@ -14,13 +14,21 @@ public class Appl {
 		System.out.println("my(Object b)");
 	}
 
-	public void my(ClassB b) {
-		System.out.println("my(ClassB b)");
+	public void my(IA b) {
+		System.out.println("my(IA b)");
 	}
 
-	public void my(ClassA a) {
-		System.out.println("my(ClassA a)");
+	public void my(IB b) {
+		System.out.println("my(IB b)");
 	}
+
+//	public void my(ClassB b) {
+//		System.out.println("my(ClassB b)");
+//	}
+//
+//	public void my(ClassA a) {
+//		System.out.println("my(ClassA a)");
+//	}
 
 //	public void my(RuntimeException e) { // Chield
 //		System.out.println("my(RuntimeException e)");
@@ -59,16 +67,17 @@ public class Appl {
 		//my(b); // Error for ABase b
 		//my(null); // my(ClassB b)
 		//
-		//Appl appl = new Appl();
+		Appl appl = new Appl();
 		//appl.my(1); // my(Object b)
 		//appl.my(null); // my(ClassB b) // my(RuntimeException e)
 		//appl.my(b); // my(Object b)
+		appl.my(new A());
 		//
 //		ClassC c = new ClassC();
 //		ClassC.ClassD d = c.new ClassD();
 //		d.md();
 		//
-		ClassC.ClassD d = new ClassC.ClassD();
-		d.md();
+//		ClassC.ClassD d = new ClassC.ClassD();
+//		d.md();
 	}
 }

@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import com.softserve.edu.opencart.data.user.IUser;
+
 public class LoginPage extends AUnloggedRightMenuPage {
 
 	private WebElement emailField;
@@ -81,32 +83,32 @@ public class LoginPage extends AUnloggedRightMenuPage {
 
 	// Functional Operations
 
-	//private void fillLoginForm(IUser user) {
-	private void fillLoginForm(String email, String password) {
+	private void fillLoginForm(IUser user) {
+	//private void fillLoginForm(String email, String password) {
         clickEmailField();
         clearEmailField();
-        //setEmailField(user.getEMail());
-        setEmailField(email);
+        setEmailField(user.getEMail());
+        //setEmailField(email);
         clickPasswordField();
         clearPasswordField();
-        //setPasswordField(user.getPassword());
-        setPasswordField(password);
+        setPasswordField(user.getPassword());
+        //setPasswordField(password);
         clickLoginButton();
     }
 	
 	// Business Logic
 
-	//public MyAccountPage successLogin(IUser user) {
-	public MyAccountPage successLogin(String email, String password) {
-        //fillLoginForm(user);
-		fillLoginForm(email, password);
+	public MyAccountPage successLogin(IUser user) {
+	//public MyAccountPage successLogin(String email, String password) {
+        fillLoginForm(user);
+		//fillLoginForm(email, password);
         return new MyAccountPage(driver);
     }
 
-	//public UnsuccessfulLoginPage unsuccessfullLogin(IUser invalidUser) {
-	public UnsuccessfulLoginPage unsuccessfullLogin(String email, String password) {
-        //fillLoginForm(invalidUser);
-		fillLoginForm(email, password);
+	public UnsuccessfulLoginPage unsuccessfullLogin(IUser invalidUser) {
+	//public UnsuccessfulLoginPage unsuccessfullLogin(String email, String password) {
+        fillLoginForm(invalidUser);
+		//fillLoginForm(email, password);
         return new UnsuccessfulLoginPage(driver);
     }
 	
