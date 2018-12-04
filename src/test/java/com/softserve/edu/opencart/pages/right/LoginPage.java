@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import com.softserve.edu.opencart.data.user.IUser;
+import com.softserve.edu.opencart.tools.Application;
 
 public class LoginPage extends AUnloggedRightMenuPage {
 
@@ -101,6 +102,7 @@ public class LoginPage extends AUnloggedRightMenuPage {
 	public MyAccountPage successLogin(IUser user) {
 	//public MyAccountPage successLogin(String email, String password) {
         fillLoginForm(user);
+        Application.get().getBrowser().getTestStatus().setLogged(true);
 		//fillLoginForm(email, password);
         return new MyAccountPage(driver);
     }

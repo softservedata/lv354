@@ -12,12 +12,16 @@ import com.softserve.edu.opencart.data.product.Currencies;
 import com.softserve.edu.opencart.pages.cart.PopupShoppingCartComponent;
 import com.softserve.edu.opencart.pages.right.AccountLogoutPage;
 import com.softserve.edu.opencart.pages.right.LoginPage;
+import com.softserve.edu.opencart.tools.Application;
 import com.softserve.edu.opencart.tools.RegexUtils;
 
 public abstract class AHeadPage {
 	protected final String TAG_ATTRIBUTE_VALUE = "value";
 	protected final String OPTION_NULL_MESSAGE = "DropdownOption is null";
 	protected final String OPTION_NOT_FOUND_MESSAGE = "Option %s not found in %s";
+	protected final String ERROR_LOGIN_MESSAGE = "Current user is %s logged";
+	protected final String EMPTY_MESSAGE = "";
+	protected final String NOT_MESSAGE = "not";
 	//
 	protected final String LIST_CURENCIES_BYCSS = "div.btn-group.open ul.dropdown-menu li";
 	protected final String DROPDOWN_MENU_MYACCOUNT_BYCSS = ".dropdown-menu-right li";
@@ -259,12 +263,20 @@ public abstract class AHeadPage {
 	}
 
 	protected void clickUnloggedMyAccountByPartialName(UnloggedMyAccount optionName) {
-		// TODO
+		if (Application.get().getLoginStatus()) {
+			// TODO Develop Custom Exception
+			throw new RuntimeException(String.format(ERROR_LOGIN_MESSAGE,
+							Application.get().getLoginStatus() ? EMPTY_MESSAGE : NOT_MESSAGE));
+		}
 		clickDropdownMenuMyAccountByPartialName(optionName.toString());
 	}
 
 	protected void clickLoggedMyAccountByPartialName(LoggedMyAccount optionName) {
-		// TODO
+		if (!Application.get().getLoginStatus()) {
+			// TODO Develop Custom Exception
+			throw new RuntimeException(String.format(ERROR_LOGIN_MESSAGE,
+							Application.get().getLoginStatus() ? EMPTY_MESSAGE : NOT_MESSAGE));
+		}
 		clickDropdownMenuMyAccountByPartialName(optionName.toString());
 	}
 	
@@ -279,6 +291,7 @@ public abstract class AHeadPage {
 
 	public AccountLogoutPage gotoLogout() {
 		clickLoggedMyAccountByPartialName(LoggedMyAccount.LOGOUT);
+		Application.get().getBrowser().getTestStatus().setLogged(false);
 		return new AccountLogoutPage(driver);	
 	}
 

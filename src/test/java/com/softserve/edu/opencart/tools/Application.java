@@ -9,6 +9,7 @@ import java.util.HashMap;
 import com.softserve.edu.opencart.data.application.ApplicationSourceRepository;
 import com.softserve.edu.opencart.data.application.IApplicationSource;
 import com.softserve.edu.opencart.pages.HomePage;
+import com.softserve.edu.opencart.pages.right.AccountLogoutPage;
 
 public class Application {
 
@@ -196,6 +197,16 @@ public class Application {
 		return getDecimalFormat2().format(number + PRICE_PRECISION);
 	}
 
+	// Functional Operation
+	
+	public void setLoginStatus(boolean loginStatus) {
+		getBrowser().getTestStatus().setLogged(loginStatus);
+	}
+
+	public boolean getLoginStatus() {
+		return getBrowser().getTestStatus().isLogged();
+	}
+
 	// Pages
 
 	//@Step("load_Application STEP")
@@ -219,9 +230,9 @@ public class Application {
 	// return new LoginPage();
 	// }
 
-	// public LogoutPage logout() {
-	// getBrowser().openUrl(applicationSource.getUserLogoutUrl());
-	// return new LogoutPage();
-	// }
+	 public AccountLogoutPage logout() {
+	 getBrowser().openUrl(applicationSource.getUserLogoutUrl());
+	 return new AccountLogoutPage(getBrowser().getDriver());
+	 }
 
 }

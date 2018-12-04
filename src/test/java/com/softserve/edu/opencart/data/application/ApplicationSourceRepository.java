@@ -34,7 +34,8 @@ public final class ApplicationSourceRepository {
 				// "http://atqc-shop.epizy.com",
 				// "http://192.168.103.191/opencart/upload/",
 				"http://taqc-opencart.epizy.com/",
-				// "http://nazaronoc.000webhostapp.com/"
+				// "http://nazaronoc.000webhostapp.com/",
+				"http://taqc-opencart.epizy.com/opencart/upload/index.php?route=account/logout",
 				"jdbc:mysql://192.168.103.210:3306/opencart", "lv304", "Lv344_TAQC",
 				// SystemPropertyUtils.getExistingProperty("database-password",
 				// "DATABASE_PASSWORD"),
@@ -61,8 +62,8 @@ public final class ApplicationSourceRepository {
 				// "http://192.168.103.210/opencart/upload",
 				// "http://atqc-shop.epizy.com",
 				"http://192.168.103.172/opencart/upload/",
-				// "http://taqc-opencart.epizy.com/",
-				// "http://nazaronoc.000webhostapp.com/"
+				//"http://taqc-opencart.epizy.com/",
+				"http://192.168.103.172/opencart/upload/index.php?route=account/logout",
 				"jdbc:mysql://192.168.103.172:3306/opencart", "lv354", "Lv354_TAQC",
 				// SystemPropertyUtils.getExistingProperty("database-password",
 				// "DATABASE_PASSWORD"),
@@ -90,7 +91,8 @@ public final class ApplicationSourceRepository {
 				// "http://atqc-shop.epizy.com",
 				"http://192.168.103.172/opencart/upload/",
 				// "http://taqc-opencart.epizy.com/",
-				// "http://nazaronoc.000webhostapp.com/"
+				// "http://nazaronoc.000webhostapp.com/",
+				"http://192.168.103.172/opencart/upload/index.php?route=account/logout",
 				"jdbc:mysql://192.168.103.172:3306/opencart", "lv354", "Lv354_TAQC",
 				// SystemPropertyUtils.getExistingProperty("database-password",
 				// "DATABASE_PASSWORD"),

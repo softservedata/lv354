@@ -12,6 +12,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.softserve.edu.opencart.data.application.IApplicationSource;
+import com.softserve.edu.opencart.data.application.TestStatus;
 
 public class BrowserWrapper {
 
@@ -91,9 +92,11 @@ public class BrowserWrapper {
 	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 	private WebDriver driver;
+	private TestStatus testStatus;
 
 	public BrowserWrapper(IApplicationSource applicationSource) {
 		initWebDriver(applicationSource);
+		initElements();
 	}
 
 	private void initWebDriver(IApplicationSource applicationSource) {
@@ -113,9 +116,17 @@ public class BrowserWrapper {
 		driver.manage().timeouts().implicitlyWait(applicationSource.getImplicitWaitTimeOut(), TimeUnit.SECONDS);
 	}
 
+	private void initElements() {
+		testStatus = new TestStatus();
+	}
+	
 	// TODO Change to default package
 	public WebDriver getDriver() {
 		return driver;
+	}
+
+	public TestStatus getTestStatus() {
+		return testStatus;
 	}
 
 	// TODO Zoom page before take screen or move to element. Yandex Ashot

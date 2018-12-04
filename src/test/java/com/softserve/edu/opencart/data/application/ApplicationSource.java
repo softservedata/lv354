@@ -32,7 +32,7 @@ public class ApplicationSource implements IApplicationSource {
 	// URLs
 	private String baseUrl;
 	// private String userLoginUrl;
-	// private String userLogoutUrl;
+	private String userLogoutUrl;
 	//
 	// private String adminLoginUrl;
 	// private String adminLogoutUrl;
@@ -46,12 +46,14 @@ public class ApplicationSource implements IApplicationSource {
 
 	// TODO Develop Builder
 	public ApplicationSource(String browserName, String driverPath, long implicitWaitTimeOut, boolean consoleOutput,
-			String baseUrl, String databaseUrl, String databaseLogin, String databasePassword, Driver jdbcDriver) {
+			String baseUrl, String userLogoutUrl,
+			String databaseUrl, String databaseLogin, String databasePassword, Driver jdbcDriver) {
 		this.browserName = browserName;
 		this.driverPath = driverPath;
 		this.implicitWaitTimeOut = implicitWaitTimeOut;
 		this.consoleOutput = consoleOutput;
 		this.baseUrl = baseUrl;
+		this.userLogoutUrl = userLogoutUrl;
 		//
 		this.databaseUrl = databaseUrl;
 		this.databaseLogin = databaseLogin;
@@ -79,6 +81,10 @@ public class ApplicationSource implements IApplicationSource {
 
 	public void setBaseUrl(String baseUrl) {
 		this.baseUrl = baseUrl;
+	}
+
+	public void setUserLogoutUrl(String userLogoutUrl) {
+		this.userLogoutUrl = userLogoutUrl;
 	}
 
 	public void setDatabaseUrl(String databaseUrl) {
@@ -117,6 +123,10 @@ public class ApplicationSource implements IApplicationSource {
 
 	public String getBaseUrl() {
 		return baseUrl;
+	}
+
+	public String getUserLogoutUrl() {
+		return userLogoutUrl;
 	}
 
 	public String getDatabaseUrl() {

@@ -14,6 +14,8 @@ public interface IApplicationSource {
 	
 	String getBaseUrl();
 
+	String getUserLogoutUrl();
+	
 	String getDatabaseUrl();
 
 	String getDatabaseLogin();
