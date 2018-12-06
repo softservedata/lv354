@@ -5,6 +5,8 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.softserve.edu.opencart.data.head.LoggedMyAccount;
 import com.softserve.edu.opencart.data.head.UnloggedMyAccount;
@@ -26,6 +28,7 @@ public abstract class AHeadPage {
 	protected final String LIST_CURENCIES_BYCSS = "div.btn-group.open ul.dropdown-menu li";
 	protected final String DROPDOWN_MENU_MYACCOUNT_BYCSS = ".dropdown-menu-right li";
 	//
+	protected final Logger log = LoggerFactory.getLogger(this.getClass());
 	protected WebDriver driver;
 	//
 	private WebElement currency;
@@ -272,8 +275,11 @@ public abstract class AHeadPage {
 	}
 
 	protected void clickLoggedMyAccountByPartialName(LoggedMyAccount optionName) {
+		log.trace("clickLoggedMyAccountByPartialName() start");
 		if (!Application.get().getLoginStatus()) {
 			// TODO Develop Custom Exception
+			log.error(ERROR_LOGIN_MESSAGE,
+					Application.get().getLoginStatus() ? EMPTY_MESSAGE : NOT_MESSAGE);
 			throw new RuntimeException(String.format(ERROR_LOGIN_MESSAGE,
 							Application.get().getLoginStatus() ? EMPTY_MESSAGE : NOT_MESSAGE));
 		}
@@ -283,7 +289,9 @@ public abstract class AHeadPage {
 	// Business Logic
 
 	public LoginPage gotoLogin() {
+		log.debug("gotoLogin() start");
 		clickUnloggedMyAccountByPartialName(UnloggedMyAccount.LOGIN);
+		log.debug("gotoLogin() done");
 		return new LoginPage(driver);	
 	}
 	

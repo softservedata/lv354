@@ -26,6 +26,7 @@ public class LoginApplicationTest extends ApplicationTestRunner {
     @Test(dataProvider = "validUsers")
     public void checkLogin(IUser validUser) {
     //public void checkLogin(String email, String password, String firstname) {
+    	log.info("checkLogin() start");
         //
         // Precondition
         // Steps
@@ -55,6 +56,7 @@ public class LoginApplicationTest extends ApplicationTestRunner {
         HomePage homePage = accountLogoutPage.chooseContinue();
         delayExecution(2);
         // TODO homePage
+        log.info("checkLogin() done");
     }
 
 //    @Test(dataProvider = "validUsers")

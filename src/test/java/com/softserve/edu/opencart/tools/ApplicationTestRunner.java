@@ -23,34 +23,35 @@ import com.softserve.edu.opencart.data.application.ApplicationSourceRepository;
 //import io.qameta.allure.Attachment;
 
 public class ApplicationTestRunner {
-    //protected final Logger log = LoggerFactory.getLogger(this.getClass());
+    protected final Logger log = LoggerFactory.getLogger(this.getClass());
 
     @BeforeClass
     public void beforeClass(ITestContext context) {
-        //log.info("@BeforeClass start");
+        log.info("@BeforeClass start");
         //Application.get(ApplicationSourceRepository.EpizyChrome());
         Application.get(ApplicationSourceRepository.localChrome());
         //Application.get(ApplicationSourceRepository.localChromeWithoutUI());
-        //log.info("@BeforeClass done");
+        log.info("@BeforeClass done");
     }
 
     
     @AfterClass(alwaysRun = true)
     public void afterClass() {
-        //log.info("@AfterClass start");
+        log.info("@AfterClass start");
         Application.remove();
-        //log.info("@AfterClass done");
+        log.info("@AfterClass done");
     }
 
     @BeforeMethod
     public void beforeMethod() {
-        //log.info("@BeforeMethod start, ThreadId = " + Thread.currentThread().getId());
+        log.info("@BeforeMethod start, ThreadId = " + Thread.currentThread().getId());
         Application.get().loadApplication();
-        //log.info("@BeforeMethod done");
+        log.info("@BeforeMethod done");
     }
 
     @AfterMethod(alwaysRun = true)
     public void afterMethod(ITestResult testResult) {
+    	log.info("method: " + testResult.getName() + "  Success: " + testResult.isSuccess());
         //log.info("@AfterMethod start, ThreadId = " + Thread.currentThread().getId());
         Reporter.setCurrentTestResult(testResult);
         //log.info("@AfterMethod done" + TestResultUtils.testResultMessage(testResult));
