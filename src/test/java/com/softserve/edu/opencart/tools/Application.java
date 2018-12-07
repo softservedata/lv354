@@ -26,8 +26,8 @@ public class Application {
 	//
 	// TODO Change for parallel work
 	private IApplicationSource applicationSource;
-	//private CaptureUtils captureUtils;
-	//private ReporterWrapper reporter;
+	private CaptureUtils captureUtils;
+	private ReporterWrapper reporter;
 	// private FlexAssert flexAssert;
 	//
 	//// private BrowserWrapper browser;
@@ -55,8 +55,8 @@ public class Application {
 						applicationSource = ApplicationSourceRepository.defaultParameters();
 					}
 					instance = new Application(applicationSource);
-					// instance.initCaptureUtils();
-					// instance.initReporter(applicationSource);
+					//instance.initCaptureUtils();
+					//instance.initReporter(applicationSource);
 					// instance.initFlexAssert();
 					//// instance.initBrowser(applicationSource);
 					// instance.initSearch(applicationSource);
@@ -108,19 +108,19 @@ public class Application {
 		return applicationSource;
 	}
 
-//	public CaptureUtils captureUtils() {
-//		if (captureUtils == null) {
-//			initCaptureUtils();
-//		}
-//		return captureUtils;
-//	}
+	public CaptureUtils captureUtils() {
+		if (captureUtils == null) {
+			initCaptureUtils();
+		}
+		return captureUtils;
+	}
 
-//	public ReporterWrapper reporter() {
-//		if (reporter == null) {
-//			initReporter(getApplicationSource());
-//		}
-//		return reporter;
-//	}
+	public ReporterWrapper reporter() {
+		if (reporter == null) {
+			initReporter(getApplicationSource());
+		}
+		return reporter;
+	}
 
 //    public FlexAssert flexAssert() {
 //        return flexAssert;
@@ -162,14 +162,14 @@ public class Application {
 	// Initialization
 
 	// TODO Change for parallel work
-//	private void initCaptureUtils() {
-//		// TODO Add parameters to applicationSource
-//		this.captureUtils = new CaptureUtils();
-//	}
+	private void initCaptureUtils() {
+		// TODO Add parameters to applicationSource
+		this.captureUtils = new CaptureUtils();
+	}
 
-//	private void initReporter(IApplicationSource applicationSource) {
-//		this.reporter = new ReporterWrapper(applicationSource);
-//	}
+	private void initReporter(IApplicationSource applicationSource) {
+		this.reporter = new ReporterWrapper(applicationSource);
+	}
 
 //    private void initFlexAssert() {
 //        this.flexAssert = new FlexAssert(reporter());

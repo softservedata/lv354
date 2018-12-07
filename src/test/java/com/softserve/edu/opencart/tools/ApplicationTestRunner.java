@@ -54,7 +54,7 @@ public class ApplicationTestRunner {
     	log.info("method: " + testResult.getName() + "  Success: " + testResult.isSuccess());
         //log.info("@AfterMethod start, ThreadId = " + Thread.currentThread().getId());
         Reporter.setCurrentTestResult(testResult);
-        //log.info("@AfterMethod done" + TestResultUtils.testResultMessage(testResult));
+        log.info("@AfterMethod done" + TestResultUtils.testResultMessage(testResult));
         //
         // for Allure
         if (testResult.getStatus() == ITestResult.FAILURE) {
