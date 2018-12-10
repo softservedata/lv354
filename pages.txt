@@ -1,9 +1,9 @@
-common		com.softserve.edu.opencart.pages
-search		com.softserve.edu.opencart.pages.search
-leftMenu	com.softserve.edu.opencart.pages.left
-rightMenu	com.softserve.edu.opencart.pages.right
-cart		com.softserve.edu.opencart.pages.cart
-currency	com.softserve.edu.opencart.data.product;
+common		com.opencart.pages
+search		com.opencart.pages.search
+leftMenu	com.opencart.pages.left
+rightMenu	com.opencart.pages.right
+cart		com.opencart.pages.cart
+currency	com.opencart.data.product;
 
 Currencies
 

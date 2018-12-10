@@ -5,13 +5,8 @@
 
 	<test name="Test1">
 		<classes>
-			<class name="com.softserve.edu.AppTest">
-				<methods>
-					<include name="testApp" />
-				</methods>
+			<class name="com.opencart.tests.SearchTests">
 			</class>
-<!-- 			<class name="com.softserve.edu.StartTest" /> -->
 		</classes>
 	</test> <!-- Test -->
-
 </suite> <!-- Suite -->

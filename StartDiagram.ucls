@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.2" icons="true" always-add-relationships="true" generalizations="true" realizations="true" 
   associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="com.softserve.edu.opencart.pages.HomePage" project="lv354" 
+  <class id="1" language="java" name="com.opencart.pages.HomePage" project="lv354"
     file="/lv354/src/test/java/com/softserve/edu/opencart/pages/HomePage.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="53" width="157" x="339" y="233"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -10,7 +10,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="com.softserve.edu.opencart.pages.MainMenuComponent" project="lv354" 
+  <class id="2" language="java" name="com.opencart.components.MainMenuComponent" project="lv354"
     file="/lv354/src/test/java/com/softserve/edu/opencart/pages/MainMenuComponent.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="53" width="157" x="121" y="140"/>    
@@ -20,7 +20,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="com.softserve.edu.opencart.pages.APathBarPage" project="lv354" 
+  <class id="3" language="java" name="com.opencart.pages.BreadcrumbPage" project="lv354"
     file="/lv354/src/test/java/com/softserve/edu/opencart/pages/APathBarPage.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="53" width="157" x="536" y="233"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -29,7 +29,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="com.softserve.edu.opencart.pages.DropdownMenuComponent" project="lv354" 
+  <class id="4" language="java" name="com.opencart.components.DropdownMenuComponent" project="lv354"
     file="/lv354/src/test/java/com/softserve/edu/opencart/pages/DropdownMenuComponent.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="106" y="275"/>    
@@ -39,7 +39,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="com.softserve.edu.opencart.pages.ProductComponent" project="lv354" 
+  <class id="5" language="java" name="com.opencart.components.ProductItemComponent" project="lv354"
     file="/lv354/src/test/java/com/softserve/edu/opencart/pages/ProductComponent.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="335" y="360"/>    
@@ -49,7 +49,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="com.softserve.edu.opencart.pages.AHeadPage" project="lv354" 
+  <class id="6" language="java" name="com.opencart.pages.AHeadPage" project="lv354"
     file="/lv354/src/test/java/com/softserve/edu/opencart/pages/AHeadPage.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="53" width="157" x="437" y="140"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -58,7 +58,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="com.softserve.edu.opencart.pages.cart.ShoppingCartPage" project="lv354" 
+  <class id="7" language="java" name="com.opencart.pages.cart.ShoppingCartPage" project="lv354"
     file="/lv354/src/test/java/com/softserve/edu/opencart/pages/cart/ShoppingCartPage.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="845" y="374"/>    
@@ -68,7 +68,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="8" language="java" name="com.softserve.edu.opencart.pages.cart.PopupProductCartComponent" project="lv354" 
+  <class id="8" language="java" name="com.opencart.pages.cart.PopupProductCartComponent" project="lv354"
     file="/lv354/src/test/java/com/softserve/edu/opencart/pages/cart/PopupProductCartComponent.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1086" y="473"/>    
@@ -78,7 +78,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="com.softserve.edu.opencart.pages.cart.PopupShoppingCartComponent" project="lv354" 
+  <class id="9" language="java" name="com.opencart.pages.cart.PopupShoppingCartComponent" project="lv354"
     file="/lv354/src/test/java/com/softserve/edu/opencart/pages/cart/PopupShoppingCartComponent.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1074" y="374"/>    
@@ -88,7 +88,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="10" language="java" name="com.softserve.edu.opencart.pages.cart.ProductCartComponent" project="lv354" 
+  <class id="10" language="java" name="com.opencart.pages.cart.ProductCartComponent" project="lv354"
     file="/lv354/src/test/java/com/softserve/edu/opencart/pages/cart/ProductCartComponent.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="845" y="478"/>    
@@ -98,7 +98,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="11" language="java" name="com.softserve.edu.opencart.pages.left.AcordeonsItemsPage" project="lv354" 
+  <class id="11" language="java" name="com.opencart.pages.left.AcordeonsItemsPage" project="lv354"
     file="/lv354/src/test/java/com/softserve/edu/opencart/pages/left/AcordeonsItemsPage.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="513" y="598"/>    
@@ -108,7 +108,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="12" language="java" name="com.softserve.edu.opencart.pages.left.ALeftMenuPage" project="lv354" 
+  <class id="12" language="java" name="com.opencart.pages.left.ALeftMenuPage" project="lv354"
     file="/lv354/src/test/java/com/softserve/edu/opencart/pages/left/ALeftMenuPage.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="513" y="505"/>    
@@ -118,7 +118,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="13" language="java" name="com.softserve.edu.opencart.pages.right.ALoggedRightMenuPage" project="lv354" 
+  <class id="13" language="java" name="com.opencart.pages.right.ALoggedRightMenuPage" project="lv354"
     file="/lv354/src/test/java/com/softserve/edu/opencart/pages/right/ALoggedRightMenuPage.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="631" y="716"/>    
@@ -128,7 +128,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="14" language="java" name="com.softserve.edu.opencart.pages.right.MyAccountPage" project="lv354" 
+  <class id="14" language="java" name="com.opencart.pages.right.MyAccountPage" project="lv354"
     file="/lv354/src/test/java/com/softserve/edu/opencart/pages/right/MyAccountPage.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="413" y="809"/>    
@@ -138,7 +138,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="15" language="java" name="com.softserve.edu.opencart.pages.right.RegistrationSuccessPage" project="lv354" 
+  <class id="15" language="java" name="com.opencart.pages.right.RegistrationSuccessPage" project="lv354"
     file="/lv354/src/test/java/com/softserve/edu/opencart/pages/right/RegistrationSuccessPage.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="631" y="809"/>    
@@ -148,7 +148,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="16" language="java" name="com.softserve.edu.opencart.pages.right.LoginPage" project="lv354" 
+  <class id="16" language="java" name="com.opencart.pages.right.LoginPage" project="lv354"
     file="/lv354/src/test/java/com/softserve/edu/opencart/pages/right/LoginPage.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="849" y="809"/>    
@@ -158,7 +158,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="17" language="java" name="com.softserve.edu.opencart.pages.right.RegisterPage" project="lv354" 
+  <class id="17" language="java" name="com.opencart.pages.right.RegisterPage" project="lv354"
     file="/lv354/src/test/java/com/softserve/edu/opencart/pages/right/RegisterPage.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1067" y="809"/>    
@@ -168,7 +168,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="18" language="java" name="com.softserve.edu.opencart.pages.right.ARightMenuPage" project="lv354" 
+  <class id="18" language="java" name="com.opencart.pages.right.ARightMenuPage" project="lv354"
     file="/lv354/src/test/java/com/softserve/edu/opencart/pages/right/ARightMenuPage.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="740" y="623"/>    
@@ -178,7 +178,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="19" language="java" name="com.softserve.edu.opencart.pages.right.AUnloggedRightMenuPage" project="lv354" 
+  <class id="19" language="java" name="com.opencart.pages.right.AUnloggedRightMenuPage" project="lv354"
     file="/lv354/src/test/java/com/softserve/edu/opencart/pages/right/AUnloggedRightMenuPage.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="849" y="716"/>    
@@ -188,7 +188,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="20" language="java" name="com.softserve.edu.opencart.pages.right.UnsuccessfulLoginPage" project="lv354" 
+  <class id="20" language="java" name="com.opencart.pages.right.UnsuccessfulLoginPage" project="lv354"
     file="/lv354/src/test/java/com/softserve/edu/opencart/pages/right/UnsuccessfulLoginPage.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="849" y="902"/>    
@@ -198,7 +198,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="21" language="java" name="com.softserve.edu.opencart.pages.search.SuccessfulSearchPage" project="lv354" 
+  <class id="21" language="java" name="com.opencart.pages.search.SuccessfulSearchPage" project="lv354"
     file="/lv354/src/test/java/com/softserve/edu/opencart/pages/search/SuccessfulSearchPage.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="121" y="709"/>    
@@ -208,7 +208,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="22" language="java" name="com.softserve.edu.opencart.pages.search.ASearchPage" project="lv354" 
+  <class id="22" language="java" name="com.opencart.pages.search.ASearchPage" project="lv354"
     file="/lv354/src/test/java/com/softserve/edu/opencart/pages/search/ASearchPage.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="250" y="597"/>    
@@ -218,7 +218,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="23" language="java" name="com.softserve.edu.opencart.pages.search.UnsuccessfulSearchPage" project="lv354" 
+  <class id="23" language="java" name="com.opencart.pages.search.UnsuccessfulSearchPage" project="lv354"
     file="/lv354/src/test/java/com/softserve/edu/opencart/pages/search/UnsuccessfulSearchPage.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="337" y="710"/>    
@@ -228,7 +228,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="24" language="java" name="com.softserve.edu.opencart.pages.search.ProductsCriteriaComponent" 
+  <class id="24" language="java" name="com.opencart.components.ProductsBlockComponent"
     project="lv354" file="/lv354/src/test/java/com/softserve/edu/opencart/pages/search/ProductsCriteriaComponent.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="-210" y="821"/>    
