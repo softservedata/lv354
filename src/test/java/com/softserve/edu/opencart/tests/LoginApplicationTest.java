@@ -13,12 +13,12 @@ import com.softserve.edu.opencart.tools.ApplicationTestRunner;
 
 public class LoginApplicationTest extends ApplicationTestRunner {
 
-	@DataProvider//(parallel = true)
+	@DataProvider(parallel = true)
     public Object[][] validUsers() {
         // Read from ...
         return new Object[][] { 
             { UserRepository.get().customerHahaha() },
-            //{ UserRepository.get().customerHahaha() },
+            { UserRepository.get().customerHahaha() },
         	//{ "hahaha@gmail.com", "qwerty", "hahaha" },
             };
     }

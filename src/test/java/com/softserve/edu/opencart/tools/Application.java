@@ -25,6 +25,7 @@ public class Application {
 	// Fields
 	//
 	// TODO Change for parallel work
+	//private HashMap<Long, IApplicationSource> applicationSources;
 	private IApplicationSource applicationSource;
 	private CaptureUtils captureUtils;
 	private ReporterWrapper reporter;
