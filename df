@@ -1,0 +1,125 @@
+[33mcommit 1e1f61f0ec2c932215892e4a062cf1609f2b22a6[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: bebeber <hahaha@gmail.com>
+Date:   Fri Dec 7 15:56:56 2018 +0200
+
+    TesttNG Report. Example
+
+[33mcommit b87b76260770fd026f791e0df71fa6acfd483a91[m
+Author: bebeber <hahaha@gmail.com>
+Date:   Thu Dec 6 21:21:35 2018 +0200
+
+    Add Logging
+
+[33mcommit a21d4cddc417d73260bc08e93b0a274c8b07b083[m
+Author: bebeber <hahaha@gmail.com>
+Date:   Wed Dec 5 14:09:10 2018 +0200
+
+    Page Object. Atomic Examples
+
+[33mcommit 484dff66b17fc5b325849195ab3cd3100a937256[m
+Author: bebeber <hahaha@gmail.com>
+Date:   Tue Dec 4 14:16:24 2018 +0200
+
+    Class Application. Add TestStatus
+
+[33mcommit 5f7469a77c7b5ebcedfcee380f1afa0a6dbfdbdc[m
+Author: bebeber <hahaha@gmail.com>
+Date:   Mon Dec 3 16:04:37 2018 +0200
+
+    WebDriverWrapper. Factory Method Pattern
+
+[33mcommit 5e0fd10f940ce21ce42b63b7bba433b04c9f68c6[m
+Author: bebeber <hahaha@gmail.com>
+Date:   Fri Nov 30 15:58:24 2018 +0200
+
+    Add UserRepository
+
+[33mcommit a952982be88ea1ffe5ada7ef9d5b3307a101379d[m
+Author: bebeber <hahaha@gmail.com>
+Date:   Thu Nov 29 20:19:41 2018 +0200
+
+    Examples, static, super, this, override, parameters
+
+[33mcommit 51c954a7895469c61f36262061b0b8ecd669adae[m
+Author: bebeber <hahaha@gmail.com>
+Date:   Wed Nov 28 13:27:30 2018 +0200
+
+    Add Login Test
+
+[33mcommit 8860736d3a674fae64a7c40cd0bbf999bacbc3ff[m
+Author: bebeber <hahaha@gmail.com>
+Date:   Tue Nov 27 13:59:40 2018 +0200
+
+    Add CartTest, WishListTest, RegexUtils
+
+[33mcommit f449df67e0a6c4be3d9c0239b5c2b9ecfe9d8850[m
+Author: bebeber <hahaha@gmail.com>
+Date:   Mon Nov 26 16:08:55 2018 +0200
+
+    Add HomePage
+
+[33mcommit a5c9236a2c12711b1e3d9ad56e61476fad1d3ab0[m
+Author: bebeber <hahaha@gmail.com>
+Date:   Fri Nov 23 16:01:25 2018 +0200
+
+    Add classes for PageObj_1
+
+[33mcommit 28d642d2e826c1bb6bd3716d53fea0feeccf4388[m
+Author: bebeber <hahaha@gmail.com>
+Date:   Thu Nov 22 21:16:14 2018 +0200
+
+    PageObj Structure
+
+[33mcommit 5252f046c780c02ac0bd8d84eb7ce7419901accc[m
+Author: bebeber <hahaha@gmail.com>
+Date:   Thu Nov 22 20:02:22 2018 +0200
+
+    Add RemoteWebDriver
+
+[33mcommit a9cfe8df2c900ed7bb58786b537092eb8b81f4e3[m
+Author: bebeber <hahaha@gmail.com>
+Date:   Tue Nov 20 14:00:45 2018 +0200
+
+    Different browsers
+
+[33mcommit 17b643ce4a294503a7ae7cb84cd37fbd99ef203c[m
+Author: bebeber <hahaha@gmail.com>
+Date:   Fri Nov 9 16:04:05 2018 +0200
+
+    Add TestRunner
+
+[33mcommit be1d595f3322dea6a5350cd6ac7d8d38969d8ea1[m
+Author: bebeber <hahaha@gmail.com>
+Date:   Thu Nov 8 21:12:07 2018 +0200
+
+    Search WebElements. JS injection. TakesScreenshot
+
+[33mcommit 09c54faac8ad266ccd79ec4d13525c8fa82f2bf3[m
+Author: bebeber <hahaha@gmail.com>
+Date:   Wed Nov 7 12:33:58 2018 +0200
+
+    Explicit waits. Examples
+
+[33mcommit 8b724e616810376f6115946b7f59301db17dfae7[m
+Author: bebeber <hahaha@gmail.com>
+Date:   Tue Nov 6 13:12:25 2018 +0200
+
+    Update Thread.sleep
+
+[33mcommit 8b70ca99d183140b73505be25cac8f765bb77966[m
+Author: bebeber <hahaha@gmail.com>
+Date:   Tue Nov 6 13:03:23 2018 +0200
+
+    init maven project
+
+[33mcommit 87388b77b2200e9369fcca402d1baa80caf04d4d[m
+Author: bebeber <hahaha@gmail.com>
+Date:   Thu Nov 1 21:04:50 2018 +0200
+
+    Change .gitignore
+
+[33mcommit fffd10022582024ab8e56f661383f45c3b704617[m
+Author: softservedata <softservedata@users.noreply.github.com>
+Date:   Thu Nov 1 20:13:59 2018 +0200
+
+    Initial commit
