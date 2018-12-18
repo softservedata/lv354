@@ -17,6 +17,8 @@ import com.softserve.edu.opencart.pages.right.LoginPage;
 import com.softserve.edu.opencart.tools.Application;
 import com.softserve.edu.opencart.tools.RegexUtils;
 
+import io.qameta.allure.Step;
+
 public abstract class AHeadPage {
 	protected final String TAG_ATTRIBUTE_VALUE = "value";
 	protected final String OPTION_NULL_MESSAGE = "DropdownOption is null";
@@ -47,7 +49,7 @@ public abstract class AHeadPage {
 
 	protected AHeadPage(WebDriver driver) {
 		this.driver = driver;
-		initElements();
+		initElements(); // or checkElements()
 	}
 
 	private void initElements() {
@@ -77,11 +79,18 @@ public abstract class AHeadPage {
 		// dropdownCart
 	}
 
+//	private void checkElements() {
+//	    getCurrency();
+//		driver.findElement(By.cssSelector(".btn.btn-link.dropdown-toggle"));
+//		// etc.
+//	}
+	
 	// PageObject Atomic Operation
 
 	// currency
 	public WebElement getCurrency() {
 		return currency;
+		//return driver.findElement(By.cssSelector(".btn.btn-link.dropdown-toggle"));
 	}
 
 	public String getCurrencyText() {
@@ -288,6 +297,7 @@ public abstract class AHeadPage {
 	
 	// Business Logic
 
+	@Step("goto_Login STEP")
 	public LoginPage gotoLogin() {
 		log.debug("gotoLogin() start");
 		clickUnloggedMyAccountByPartialName(UnloggedMyAccount.LOGIN);
@@ -297,6 +307,7 @@ public abstract class AHeadPage {
 	
 	// public MyAccountPage gotoMyAccount();
 
+	@Step("goto_Logout STEP")
 	public AccountLogoutPage gotoLogout() {
 		clickLoggedMyAccountByPartialName(LoggedMyAccount.LOGOUT);
 		Application.get().getBrowser().getTestStatus().setLogged(false);

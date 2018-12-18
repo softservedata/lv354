@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import io.qameta.allure.Step;
+
 public class AccountInformationPage extends ALoggedRightMenuPage {
 
 	private WebElement firstnameField;
@@ -24,6 +26,7 @@ public class AccountInformationPage extends ALoggedRightMenuPage {
 		return firstnameField;
 	}
 
+	@Step("get_Firstname_Field_Text STEP")
 	public String getFirstnameFieldText() {
 		return getFirstnameField().getAttribute(TAG_ATTRIBUTE_VALUE);
 	}

@@ -11,6 +11,16 @@ import com.softserve.edu.opencart.pages.right.AccountLogoutPage;
 import com.softserve.edu.opencart.tools.Application;
 import com.softserve.edu.opencart.tools.ApplicationTestRunner;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
+
+//@Listeners({ TestListener.class })
+@Epic("Allure_Test EPIC")
+@Feature("Login_Application_Test FEATURE")
 public class LoginApplicationTest extends ApplicationTestRunner {
 
 	@DataProvider(parallel = true)
@@ -18,11 +28,14 @@ public class LoginApplicationTest extends ApplicationTestRunner {
         // Read from ...
         return new Object[][] { 
             { UserRepository.get().customerHahaha() },
-            { UserRepository.get().customerHahaha() },
+            //{ UserRepository.get().customerHahaha() },
         	//{ "hahaha@gmail.com", "qwerty", "hahaha" },
             };
     }
 
+	@Description("Test Description: class LoginApplicationTest; checkLogin().")
+	@Severity(SeverityLevel.NORMAL)
+	@Story("check_Product_Currency STORY")
     @Test(dataProvider = "validUsers")
     public void checkLogin(IUser validUser) {
     //public void checkLogin(String email, String password, String firstname) {

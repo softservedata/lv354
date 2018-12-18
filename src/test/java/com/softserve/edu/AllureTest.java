@@ -22,5 +22,10 @@ public class AllureTest {
                 + System.getProperty("database.password"));
         Assert.assertTrue(true);
     }
-    
+
+    @Test
+    public void testAllure2() throws Exception {
+        System.out.println("Working ...");
+    }
+
 }

@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import io.qameta.allure.Step;
+
 public class MyAccountPage extends ALoggedRightMenuPage {
 
 	private WebElement editAccountInformation;
@@ -53,6 +55,7 @@ public class MyAccountPage extends ALoggedRightMenuPage {
 
 	// Business Logic
 
+	@Step("goto_Account_Information STEP")
 	public AccountInformationPage gotoAccountInformation() {
 		clickEditAccountInformation();
 		return new AccountInformationPage(driver);

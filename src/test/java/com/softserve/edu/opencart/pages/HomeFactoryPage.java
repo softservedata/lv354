@@ -17,7 +17,7 @@ public class HomeFactoryPage extends AHeadFactoryPage {
 
 	public HomeFactoryPage(WebDriver driver) {
 		super(driver);
-		PageFactory.initElements(driver, this); // 1st item
+		//PageFactory.initElements(driver, this); // 1st item
 		// initProductsComponents(); // Not Use
 	}
 
@@ -44,7 +44,8 @@ public class HomeFactoryPage extends AHeadFactoryPage {
 
 	public HomeFactoryPage chooseCurrency(Currencies currency) {
         clickCurrencyByPartialName(currency);
-        return new HomeFactoryPage(driver); 
+        // return new HomeFactoryPage(driver); // 1st item
+        return PageFactory.initElements(driver, HomeFactoryPage.class); // 2nd item
     }
 
 }

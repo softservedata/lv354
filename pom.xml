@@ -31,8 +31,8 @@
 		<!-- <allure.version>1.5.0</allure.version> -->
 		<allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
 		<allure-testng.version>2.8.1</allure-testng.version>
-<!-- 		<allure-testng-adaptor.version>1.5.4</allure-testng-adaptor.version> -->
-<!-- 		<allure-attachments.version>2.0-BETA21</allure-attachments.version> -->
+		<!-- <allure-testng-adaptor.version>1.5.4</allure-testng-adaptor.version> -->
+		<!-- <allure-attachments.version>2.0-BETA21</allure-attachments.version> -->
 		<aspectj.version>1.9.2</aspectj.version>
 		<!-- - - - - - Mocks - - - - - -->
 		<org.mockito.version>1.10.19</org.mockito.version>
@@ -91,11 +91,11 @@
 			<version>${aspectj.version}</version>
 			<!-- <scope>test</scope> -->
 		</dependency>
-<!-- 		<dependency> -->
-<!-- 			<groupId>io.qameta.allure</groupId> -->
-<!-- 			<artifactId>allure-attachments</artifactId> -->
-<!-- 			<version>${allure-testng.version}</version> -->
-<!-- 		</dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>io.qameta.allure</groupId> -->
+		<!-- <artifactId>allure-attachments</artifactId> -->
+		<!-- <version>${allure-testng.version}</version> -->
+		<!-- </dependency> -->
 		<!-- - - - Mock Object - - - -->
 		<dependency>
 			<groupId>org.mockito</groupId>
@@ -306,7 +306,8 @@
 							<goal>echo</goal>
 						</goals>
 						<configuration>
-							<message>+++++Operation System: ${os.detected.name}</message>
+							<message>+++++Project.Build.Directory: ${project.build.directory}</message>
+							<!-- <message>+++++Operation System: ${os.detected.name}</message> -->
 							<!-- <message>+++++Build Directory: ${project.build.directory}</message> -->
 							<!-- <message>+++++Operation System: ${os.detected.classifier}</message> -->
 							<!-- <message>+++++Local Repository: ${settings.localRepository}</message> -->
@@ -321,19 +322,19 @@
 				<artifactId>exec-maven-plugin</artifactId>
 				<version>1.2.1</version>
 				<executions>
-<!-- 					<execution> -->
-<!-- 						<id>pre-integration-test</id> -->
-<!-- 						<goals> -->
-<!-- 							<goal>exec</goal> -->
-<!-- 						</goals> -->
-<!-- 						<phase>pre-integration-test</phase> -->
-<!-- 						<configuration> -->
-<!-- 							<executable>pre.bat</executable> -->
-<!-- 							<arguments> -->
-<!-- 								<argument>PreIntegration</argument> -->
-<!-- 							</arguments> -->
-<!-- 						</configuration> -->
-<!-- 					</execution> -->
+					<!-- <execution> -->
+					<!-- <id>pre-integration-test</id> -->
+					<!-- <goals> -->
+					<!-- <goal>exec</goal> -->
+					<!-- </goals> -->
+					<!-- <phase>pre-integration-test</phase> -->
+					<!-- <configuration> -->
+					<!-- <executable>pre.bat</executable> -->
+					<!-- <arguments> -->
+					<!-- <argument>PreIntegration</argument> -->
+					<!-- </arguments> -->
+					<!-- </configuration> -->
+					<!-- </execution> -->
 					<execution>
 						<id>post-integration-test</id>
 						<goals>
@@ -342,10 +343,10 @@
 						<phase>post-integration-test</phase>
 						<configuration>
 							<executable>runallure.bat</executable>
-<!-- 							<arguments> -->
-<!-- 								<argument>serve</argument> -->
-<!-- 								<argument>${allure.results.directory}</argument> -->
-<!-- 							</arguments> -->
+							<!-- <arguments> -->
+							<!-- <argument>serve</argument> -->
+							<!-- <argument>${allure.results.directory}</argument> -->
+							<!-- </arguments> -->
 						</configuration>
 					</execution>
 				</executions>

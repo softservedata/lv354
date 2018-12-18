@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import com.softserve.edu.opencart.data.user.IUser;
 import com.softserve.edu.opencart.tools.Application;
 
+import io.qameta.allure.Step;
+
 public class LoginPage extends AUnloggedRightMenuPage {
 
 	private WebElement emailField;
@@ -99,6 +101,7 @@ public class LoginPage extends AUnloggedRightMenuPage {
 	
 	// Business Logic
 
+	@Step("success_Login STEP")
 	public MyAccountPage successLogin(IUser user) {
 	//public MyAccountPage successLogin(String email, String password) {
         fillLoginForm(user);

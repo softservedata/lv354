@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 
 import com.softserve.edu.opencart.pages.HomePage;
 
+import io.qameta.allure.Step;
+
 public class AccountLogoutPage extends AUnloggedRightMenuPage {
 
 	public final String EXPECTED_TEXT_LOGOUT = "Account Logout";
@@ -30,6 +32,7 @@ public class AccountLogoutPage extends AUnloggedRightMenuPage {
         return accountLogoutLabel;
     }
 
+	@Step("get_Account_Logout_Label_Text STEP")
 	public String getAccountLogoutLabelText() {
         return getAccountLogoutLabel().getText();
     }
@@ -51,6 +54,7 @@ public class AccountLogoutPage extends AUnloggedRightMenuPage {
 	
 	// Business Logic
 
+	@Step("choose_Continue_Home_Page STEP")
 	public HomePage chooseContinue() {
 		clickContinueButton();
         return new HomePage(driver); 
