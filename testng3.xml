@@ -22,8 +22,8 @@
 <!-- 			<class name="com.softserve.edu.AppTestReport" /> -->
 <!-- 			<class name="com.softserve.edu.AppTestReport" /> -->
 <!-- 			<class name="com.softserve.edu.AllureTest" /> -->
-<!-- 			<class name="com.softserve.edu.opencart.tests.LoginApplicationTest" /> -->
-			<class name="com.softserve.edu.opencart.tests.CurrencyPageFactoryTes" />
+			<class name="com.softserve.edu.opencart.tests.LoginApplicationTest" />
+<!-- 			<class name="com.softserve.edu.opencart.tests.CurrencyPageFactoryTes" /> -->
 		</classes>
 	</test> <!-- Test -->
 

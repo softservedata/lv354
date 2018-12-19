@@ -22,7 +22,7 @@ public class CurrencyPageFactoryTest extends TestFactoryRunner {
 		};
 	}
 
-	@Test(dataProvider = "currencyData")
+	//@Test(dataProvider = "currencyData")
     public void checkCurrency(Currencies currency, String expectedCurrencyText) {
         //
         // Precondition
@@ -55,7 +55,7 @@ public class CurrencyPageFactoryTest extends TestFactoryRunner {
 			};
 	}
 
-	//@Test(dataProvider = "productCurrencyData")
+	@Test(dataProvider = "productCurrencyData")
 	public void checkProductCurrency(Currencies currency, Product product) {
 		//
 		// Precondition

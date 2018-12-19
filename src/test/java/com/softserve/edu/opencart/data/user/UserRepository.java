@@ -1,5 +1,10 @@
 package com.softserve.edu.opencart.data.user;
 
+import java.util.List;
+
+import com.softserve.edu.opencart.tools.CSVReader;
+import com.softserve.edu.opencart.tools.ExcelReader;
+
 public final class UserRepository {
 	private static volatile UserRepository instance = null;
 
@@ -39,5 +44,21 @@ public final class UserRepository {
     	    	.setSubscribe(true)
     			.build();
 	}
+
+    public static List<IUser> fromCsv(String filename) {
+    	return User.getByLists(new CSVReader(filename).getAllCells());
+    }
+
+    public static List<IUser> fromCsv() {
+    	return fromCsv("users.csv");
+    }
+
+    public static List<IUser> fromExcel(String filename) {
+    	return User.getByLists(new ExcelReader(filename).getAllCells());
+    }
+
+    public static List<IUser> fromExcel() {
+    	return fromExcel("users.xlsx");
+    }
 
 }

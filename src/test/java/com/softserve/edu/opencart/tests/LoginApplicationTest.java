@@ -10,6 +10,7 @@ import com.softserve.edu.opencart.pages.right.AccountInformationPage;
 import com.softserve.edu.opencart.pages.right.AccountLogoutPage;
 import com.softserve.edu.opencart.tools.Application;
 import com.softserve.edu.opencart.tools.ApplicationTestRunner;
+import com.softserve.edu.opencart.tools.ListUtils;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
@@ -33,10 +34,22 @@ public class LoginApplicationTest extends ApplicationTestRunner {
             };
     }
 
+	@DataProvider//(parallel = true)
+    public Object[][] validCSVUsers() {
+        return ListUtils.toMultiArray(UserRepository.fromCsv());
+    }
+
+	@DataProvider//(parallel = true)
+    public Object[][] validExcelUsers() {
+        return ListUtils.toMultiArray(UserRepository.fromExcel());
+    }
+
 	@Description("Test Description: class LoginApplicationTest; checkLogin().")
 	@Severity(SeverityLevel.NORMAL)
 	@Story("check_Product_Currency STORY")
-    @Test(dataProvider = "validUsers")
+    //@Test(dataProvider = "validUsers")
+	//@Test(dataProvider = "validCSVUsers")
+	@Test(dataProvider = "validExcelUsers")
     public void checkLogin(IUser validUser) {
     //public void checkLogin(String email, String password, String firstname) {
     	log.info("checkLogin() start");
