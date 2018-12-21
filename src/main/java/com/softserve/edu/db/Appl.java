@@ -14,12 +14,12 @@ public class Appl {
 	//private static String password = "067db";
 	// private static String username = "db304";
 	// private static String password = "db304";
-	private static String username = "root";
-	private static String password = "root";
+	//private static String username = "root";
+	//private static String password = "root";
 	// private static String username = "postgres";
 	// private static String password = "postgres";
-	//private static String username = "lv3X4";
-	//private static String password = "Lv3X4_TAQC";
+	private static String username = "lv3X4";
+	private static String password = "Lv3X4_TAQC";
 	//
 	// Microsoft
 	// private static String URL =
@@ -68,8 +68,8 @@ public class Appl {
 	//// private static String URL = "jdbc:mysql://localhost:3306/lv196first";
 	////private static String URL = "jdbc:mysql://localhost:3306";
 	//private static String URL = "jdbc:mysql://localhost:3306/lv344";
-	private static String URL = "jdbc:mysql://localhost:3306/lv354oms";
-	////private static String URL = "jdbc:mysql://192.168.103.191:3306/opencart";
+	//private static String URL = "jdbc:mysql://localhost:3306/lv354oms";
+	private static String URL = "jdbc:mysql://192.168.103.172:3306/opencart";
 	//
 	// PostgresSQL
 	// private static String URL =
@@ -171,7 +171,7 @@ public class Appl {
 		//ResultSet rs = st.executeQuery("select * from peoples;");
 		////st.execute("UPDATE Users SET Password='hahaha' WHERE ID='11';");
 		//st.execute("USE lv354oms;");
-		ResultSet rs = st.executeQuery("select * from Users;");
+		////ResultSet rs = st.executeQuery("select * from Users;");
 		//
 		//st.execute("select * from Users;");
 		//
@@ -184,8 +184,9 @@ public class Appl {
         //st.execute("select * from Users;");
 		//ResultSet rs = st.getResultSet();
 		//
-		//st.execute("UPDATE oc_customer_login SET total='1' WHERE email LIKE 'abc%';");
-		////ResultSet rs = st.executeQuery("select * from oc_customer_login;");
+		//st.execute("UPDATE oc_customer_login SET total='1' WHERE email LIKE 'bebe%';");
+		ResultSet rs = st.executeQuery("select * from oc_customer_login;");
+		//ResultSet rs = st.executeQuery("select * from oc_customer;");
 		//
 		//ResultSet rs = st.getResultSet();
 		//
