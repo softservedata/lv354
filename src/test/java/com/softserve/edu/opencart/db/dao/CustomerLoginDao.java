@@ -36,8 +36,8 @@ public class CustomerLoginDao {
 				}
 				all.add(new CustomerLogin(
 						Long.parseLong(queryResult[0]),   // long customer_login_id
-						queryResult[1], 				  // String ip
-						queryResult[2], 				  // String email
+						queryResult[2], 				  // String ip
+						queryResult[1], 				  // String email
 						Integer.parseInt(queryResult[3]), // int total
 						queryResult[4], 				  // String date_added
 						queryResult[5]  			      // String date_modified
@@ -78,7 +78,7 @@ public class CustomerLoginDao {
 		try {
 			statement = ConnectionManager.getInstance().getConnection().createStatement();
 			// TODO CHECK!
-			query = String.format(query, customerLogin.getEmail());
+			query = String.format(query, customerLogin.getTotal(), customerLogin.getEmail());
 			result = statement.execute(query);
 		} catch (SQLException e) {
 			throw new RuntimeException(DATABASE_INPUT_ERROR, e);

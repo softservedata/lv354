@@ -2,7 +2,7 @@ package com.softserve.edu.opencart.db.entity;
 
 public class CustomerLogin {
 	public static final String READ_LOGINS = "select * from oc_customer_login;";
-	public static final String UNLOCK_LOGIN = "UPDATE oc_customer_login SET total='1' WHERE email LIKE '%s%%';";
+	public static final String UNLOCK_LOGIN = "UPDATE oc_customer_login SET total='%s' WHERE email LIKE '%s%%';";
 	//
 	private long customer_login_id;
 	private String ip;
@@ -11,6 +11,7 @@ public class CustomerLogin {
 	private String date_added;
 	private String date_modified;
 	
+	// TODO Develop Builder
 	public CustomerLogin(long customer_login_id, String ip, String email,
 			int total, String date_added, String date_modified) {
 		this.customer_login_id = customer_login_id;

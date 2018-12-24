@@ -5,9 +5,11 @@ import org.testng.annotations.Test;
 
 import com.softserve.edu.opencart.data.user.IUser;
 import com.softserve.edu.opencart.data.user.UserRepository;
+import com.softserve.edu.opencart.db.service.UserService;
 import com.softserve.edu.opencart.pages.HomePage;
 import com.softserve.edu.opencart.pages.right.AccountInformationPage;
 import com.softserve.edu.opencart.pages.right.AccountLogoutPage;
+import com.softserve.edu.opencart.pages.right.UnsuccessfulLoginPage;
 import com.softserve.edu.opencart.tools.Application;
 import com.softserve.edu.opencart.tools.ApplicationTestRunner;
 import com.softserve.edu.opencart.tools.ListUtils;
@@ -49,7 +51,7 @@ public class LoginApplicationTest extends ApplicationTestRunner {
 	@Story("check_Product_Currency STORY")
     //@Test(dataProvider = "validUsers")
 	//@Test(dataProvider = "validCSVUsers")
-	@Test(dataProvider = "validExcelUsers")
+	//@Test(dataProvider = "validExcelUsers")
     public void checkLogin(IUser validUser) {
     //public void checkLogin(String email, String password, String firstname) {
     	log.info("checkLogin() start");
@@ -85,24 +87,66 @@ public class LoginApplicationTest extends ApplicationTestRunner {
         log.info("checkLogin() done");
     }
 
-//    @Test(dataProvider = "validUsers")
-//    public void checkLoginLogout(IUser validUser) {
-//        // Precondition
-//        // Steps
-//    	AccountInformationPage accountInformationPage = loadApplication()
-//        		.gotoLogin()
-//        		.successLogin(validUser)
-//        		.gotoAccountInformation();
-//        delayExecution(1000);
-//        //
-//        // Check
-//        Assert.assertEquals(accountInformationPage.getFirstnameFieldText(),
-//        		validUser.getFirstName());
-//        delayExecution(1000);
-//        //
-//        accountInformationPage.clickWishList();
-//        delayExecution(2000);
-//        // Return to previous state
-//    }
+	@DataProvider(parallel = true)
+    public Object[][] invalidUsers() {
+        // Read from ...
+        return new Object[][] { 
+            { UserRepository.get().invalidUser() },
+            };
+    }
+
+    @Test(dataProvider = "invalidUsers")
+    public void checkLockedUser(IUser invalidUser) {
+        // Precondition
+        // Steps
+    	UnsuccessfulLoginPage unsuccessfulLoginPage = Application.get().loadApplication()
+        		.gotoLogin()
+        		.unsuccessfullLogin(invalidUser);
+        delayExecution(1);
+        //
+        for (int i = 0; i < 5; i++) {
+            // Check UI
+        	System.out.println("\tCheckUI as LOGIN, i= " + i + "  Message: " + unsuccessfulLoginPage.getAlertMessageText());
+            Assert.assertTrue(unsuccessfulLoginPage.getAlertMessageText()
+            		.contains(UnsuccessfulLoginPage.EXPECTED_WARNING_LOGIN));
+            delayExecution(1);
+            // Steps
+        	unsuccessfulLoginPage = unsuccessfulLoginPage
+        			.unsuccessfullLogin(invalidUser); 	
+            delayExecution(1);
+        }
+        //
+        // Check UI
+        System.out.println("\tCheckUI as LOCK");
+        Assert.assertTrue(unsuccessfulLoginPage.getAlertMessageText()
+        		.contains(UnsuccessfulLoginPage.EXPECTED_WARNING_LOCK));
+        delayExecution(1);
+        //
+        // Check DB
+        UserService userService = new UserService(); 
+        System.out.println("\tCheckDB as LOCK");
+        Assert.assertTrue(userService.isLockedUser(invalidUser));
+        delayExecution(1);
+        //
+        // Steps
+        System.out.println("\tunlockUser()");
+        userService.unlockUser(invalidUser);
+        unsuccessfulLoginPage = unsuccessfulLoginPage
+    			.unsuccessfullLogin(invalidUser);
+        delayExecution(1);
+        //
+        // Check UI
+        System.out.println("\tCheckUI as UNLOCK");
+        Assert.assertTrue(unsuccessfulLoginPage.getAlertMessageText()
+        		.contains(UnsuccessfulLoginPage.EXPECTED_WARNING_LOGIN));
+        // Check DB
+        System.out.println("\tCheckDB as UNLOCK");
+        Assert.assertFalse(userService.isLockedUser(invalidUser));
+        delayExecution(1);
+        //
+        // Return to previous state
+        userService.unlockUser(invalidUser);
+        log.info("checkLockedUser() done");
+    }
     
 }

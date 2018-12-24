@@ -6,7 +6,8 @@ import org.openqa.selenium.WebElement;
 
 public class UnsuccessfulLoginPage extends LoginPage {
 	
-	public final String EXPECTED_WARNING_LOGIN = "Warning: No match for E-Mail Address and/or Password.";
+	public static final String EXPECTED_WARNING_LOGIN = "Warning: No match for E-Mail Address and/or Password.";
+	public static final String EXPECTED_WARNING_LOCK = "Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.";
 
 	private WebElement alertMessage;
 

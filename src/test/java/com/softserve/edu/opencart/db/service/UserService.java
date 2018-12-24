@@ -3,6 +3,7 @@ package com.softserve.edu.opencart.db.service;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.softserve.edu.opencart.data.user.IUser;
 import com.softserve.edu.opencart.data.user.User;
 import com.softserve.edu.opencart.data.user.UserColumns;
 import com.softserve.edu.opencart.db.dao.CustomerLoginDao;
@@ -16,28 +17,60 @@ public class UserService {
 		customerLoginDao = new CustomerLoginDao();
 	}
 	
-	public List<User> getAllUsers() {
-		List<User> result = new ArrayList<>();
+	public List<IUser> getAllUsers() {
+		List<IUser> result = new ArrayList<>();
+		List<String> row;
 		for (CustomerLogin customerLogin : customerLoginDao.getAllCustomerLogins()) {
+			row = new ArrayList<>();
 			for (int i = 0; i < UserColumns.values().length; i++) {
-				//++++
+				row.add(new String());
 			}
+			row.set(UserColumns.EMAIL.getIndex(), customerLogin.getEmail());
+			result.add(User.getByList(row));
 		}
-		// TODO
 		return result;
 	}
 
-	public List<User> getLockedUsers() {
-		// TODO
-		return null;
+	public List<IUser> getLockedUsers() {
+		List<IUser> result = new ArrayList<>();
+		List<String> row;
+		for (CustomerLogin customerLogin : customerLoginDao.getAllCustomerLogins()) {
+			if (customerLogin.getTotal() > 4 ) {
+				row = new ArrayList<>();
+				for (int i = 0; i < UserColumns.values().length; i++) {
+					row.add(new String());
+				}
+				row.set(UserColumns.EMAIL.getIndex(), customerLogin.getEmail());
+				System.out.println("\t\trow = " + row);
+				result.add(User.getByList(row));
+			}
+		}
+		return result;
 	}
 
-	public void unlockUser(User user) {
-		// TODO
+	public boolean isLockedUser(IUser user) {
+		System.out.println("\t\tisLockedUser(user): " + user.getEMail());
+		boolean result = false;
+		for (IUser current : getLockedUsers()) {
+			System.out.println("\t\tisLockedUser(user), current: " + current.getEMail());
+			if (current.getEMail().equals(user.getEMail())) {
+				result = true;
+				break;
+			}
+		}
+		return result;
+	}
+	
+	public void unlockUser(IUser user) {
+		CustomerLogin customerLogin = new CustomerLogin(0, "",
+				user.getEMail(), 0, "", "");
+		customerLoginDao.unlockCustomerLogin(customerLogin);
 	}
 
 	public void unlockAllUsers() {
-		// TODO
+		for (IUser currentUser : getLockedUsers()) {
+			unlockUser(currentUser);
+		}
 	}
 
 }
