@@ -8,7 +8,7 @@ import com.softserve.edu.opencart.pages.right.UnsuccessfulRegistrationPage;
 import com.softserve.edu.opencart.tools.Application;
 import com.softserve.edu.opencart.tools.ApplicationTestRunner;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -32,9 +32,14 @@ public class RegistrationTest extends ApplicationTestRunner {
         };
     }
 
-
-    @AfterClass(alwaysRun = true)
-    public void afterClass() {
+    @DataProvider
+    public Object[][] duplicate(){
+        return new Object[][]{
+                {UserRepository.get().duplicateEmail()}
+        };
+    }
+    @AfterTest(alwaysRun = true)
+    public void afterAllTests() {
         IUser admin = UserRepository.get().admin();
         Application.get(ApplicationSourceRepository.adminChromeWithoutUI())
                 .loadAdmin()
@@ -44,8 +49,8 @@ public class RegistrationTest extends ApplicationTestRunner {
         Application.remove();
     }
 
-    @Test(dataProvider = "validValue")
-    public void checkRegistration(IUser user) throws InterruptedException {
+    @Test(dataProvider = "validValues")
+    public void checkRegistration(IUser user){
         //Step
         AccountInformationPage accountInformationPage = Application.get()
                 .loadApplication()
@@ -59,7 +64,7 @@ public class RegistrationTest extends ApplicationTestRunner {
     }
 
     @Test(dataProvider = "validValue")
-    public void withoutAcceptRegistration(IUser user) throws InterruptedException {
+    public void withoutAcceptRegistration(IUser user){
         UnsuccessfulRegistrationPage unsuccessful = Application.get().loadApplication()
                 .gotoRegistration()
                 .withoutAccept(user);
@@ -67,9 +72,8 @@ public class RegistrationTest extends ApplicationTestRunner {
                 , "Warning: You must agree to the Privacy Policy!");
     }
 
-    //@Test
-    public void createDuplicate() throws InterruptedException {
-        IUser user = UserRepository.get().duplicateEmail();
+    @Test(dataProvider = "duplicate")
+    public void duplicate(IUser user){
         AccountInformationPage accountInformationPage = Application.get().loadApplication()
                 .gotoRegistration()
                 .successRegistration(user)
@@ -77,20 +81,16 @@ public class RegistrationTest extends ApplicationTestRunner {
                 .gotoAccountInformation();
         Assert.assertEquals(accountInformationPage.getFirstnameFieldText()
                 , user.getFirstname());
-    }
-
-    //@Test
-    public void duplicateEmail() throws InterruptedException {
-        IUser user = UserRepository.get().duplicateEmail();
+        Application.get().logout();
         UnsuccessfulRegistrationPage unsuccessful = Application.get().loadApplication()
                 .gotoRegistration()
                 .unsuccessfulRegistrationPage(user);
-        Assert.assertEquals(unsuccessful.getAlertMessage()
-                , unsuccessful.getAlertMessage());
-    }
+        Assert.assertEquals(unsuccessful.getAlertMessageText()
+                , "Warning: E-Mail Address is already registered!");
 
+    }
     //@Test
-    public void voidInput() throws InterruptedException {
+    public void voidInput(){
         IUser user = UserRepository.get().voidRegistration();
         UnsuccessfulRegistrationPage unsuccessful = Application.get().loadApplication()
                 .gotoRegistration()
@@ -98,7 +98,7 @@ public class RegistrationTest extends ApplicationTestRunner {
     }
 
     //@Test
-    public void boundaryValueOverMaxTest() throws InterruptedException {
+    public void boundaryValueOverMaxTest(){
         IUser user = UserRepository.get().boundaryValueOverMax();
         UnsuccessfulRegistrationPage unsuccessful = Application.get().loadApplication()
                 .gotoRegistration()

@@ -24,6 +24,8 @@ public class Application {
     // Fields
     //
     private IApplicationSource applicationSource;
+    private CaptureUtils captureUtils;
+    private ReporterWrapper reporter;
     //
     private HashMap<Long, BrowserWrapper> browsers;
     //
@@ -75,7 +77,19 @@ public class Application {
         return applicationSource;
     }
 
+    public CaptureUtils captureUtils() {
+        if (captureUtils == null) {
+            initCaptureUtils();
+        }
+        return captureUtils;
+    }
 
+    public ReporterWrapper reporter() {
+        if (reporter == null) {
+            initReporter(getApplicationSource());
+        }
+        return reporter;
+    }
 
     public BrowserWrapper getBrowser() {
         BrowserWrapper browserWrapper = browsers.get(Thread.currentThread().getId());
@@ -87,6 +101,13 @@ public class Application {
         // return browser;
     }
 
+    private void initCaptureUtils() {
+        this.captureUtils = new CaptureUtils();
+    }
+
+    private void initReporter(IApplicationSource applicationSource) {
+        this.reporter = new ReporterWrapper(applicationSource);
+    }
     // Initialization
 
     public double roundTo2digits(double number) {

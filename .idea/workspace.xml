@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53f17404-1201-4f65-b63b-1c6b7283ce5b" name="Default Changelist" comment="" />
+    <list default="true" id="53f17404-1201-4f65-b63b-1c6b7283ce5b" name="Default Changelist" comment="Save_ThirdDemo_2.2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/AHeadPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/AHeadPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/right/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/right/RegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/test/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/test/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/ApplicationTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/ApplicationTestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/softserve/edu/opencart/pages/AHeadPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/softserve/edu/opencart/pages/AHeadPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/softserve/edu/opencart/pages/admin/CustomersPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/softserve/edu/opencart/pages/admin/CustomersPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/softserve/edu/opencart/pages/right/RegistrationPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/softserve/edu/opencart/pages/right/RegistrationPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/softserve/edu/opencart/test/RegistrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/softserve/edu/opencart/test/RegistrationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/softserve/edu/opencart/tools/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/softserve/edu/opencart/tools/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/softserve/edu/opencart/tools/ApplicationTestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/softserve/edu/opencart/tools/ApplicationTestRunner.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,62 +26,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/AHeadPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2594#2595#0" expanded="true" />
-                <element signature="e#2625#2626#0" expanded="true" />
-                <element signature="e#2664#2665#0" expanded="true" />
-                <element signature="e#2726#2727#0" expanded="true" />
-                <element signature="e#2761#2762#0" expanded="true" />
-                <element signature="e#2798#2799#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/test/RegistrationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="43" column="29" lean-forward="true" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+            <state relative-caret-position="780">
+              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/admin/CustomersPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="26" lean-forward="true" selection-end-line="55" />
-              <folding>
-                <element signature="e#1065#1066#0" expanded="true" />
-                <element signature="e#1139#1140#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/admin/LoggedAdminPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" lean-forward="true" selection-end-line="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#649#650#0" expanded="true" />
-                <element signature="e#686#687#0" expanded="true" />
-                <element signature="e#731#732#0" expanded="true" />
-                <element signature="e#807#808#0" expanded="true" />
-                <element signature="e#848#849#0" expanded="true" />
-                <element signature="e#891#892#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,28 +41,65 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/ApplicationTestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="-7">
+              <caret line="20" column="79" selection-start-line="20" selection-start-column="79" selection-end-line="20" selection-end-column="79" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#581#582#0" expanded="true" />
                 <element signature="e#655#656#0" expanded="true" />
                 <element signature="e#722#723#0" expanded="true" />
                 <element signature="e#758#759#0" expanded="true" />
-                <element signature="e#810#811#0" expanded="true" />
-                <element signature="e#861#862#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/admin/LoginAdminPage.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/TestResultUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="75" column="29" selection-end-line="87" />
+            <state relative-caret-position="-7">
+              <caret line="13" column="65" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/ReporterWrapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="55" column="53" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#454#455#0" expanded="true" />
+                <element signature="e#496#497#0" expanded="true" />
+                <element signature="e#550#551#0" expanded="true" />
+                <element signature="e#591#592#0" expanded="true" />
+                <element signature="e#802#803#0" expanded="true" />
+                <element signature="e#844#845#0" expanded="true" />
+                <element signature="e#877#878#0" expanded="true" />
+                <element signature="e#918#919#0" expanded="true" />
+                <element signature="e#1915#1916#0" expanded="true" />
+                <element signature="e#1991#1992#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/CaptureUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#777#778#0" expanded="true" />
+                <element signature="e#858#859#0" expanded="true" />
+                <element signature="e#1270#1271#0" expanded="true" />
+                <element signature="e#1339#1340#0" expanded="true" />
+                <element signature="e#2808#2809#0" expanded="true" />
+                <element signature="e#2877#2878#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -106,33 +108,60 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="73" column="30" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
+            <state relative-caret-position="-7">
+              <caret line="104" selection-start-line="104" selection-end-line="104" />
               <folding>
                 <element signature="e#2300#2301#0" expanded="true" />
                 <element signature="e#2340#2341#0" expanded="true" />
+                <element signature="e#3211#3212#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/right/UnsuccessfulRegistrationPage.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/TimeUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="-7">
+              <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#448#449#0" expanded="true" />
+                <element signature="e#490#491#0" expanded="true" />
+                <element signature="e#544#545#0" expanded="true" />
+                <element signature="e#585#586#0" expanded="true" />
+                <element signature="e#665#666#0" expanded="true" />
+                <element signature="e#761#762#0" expanded="true" />
+                <element signature="e#933#934#0" expanded="true" />
+                <element signature="e#991#992#0" expanded="true" />
+                <element signature="e#1035#1036#0" expanded="true" />
+                <element signature="e#1097#1098#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/data/application/ApplicationSourceRepository.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/RegexUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+            <state relative-caret-position="-7">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2261#2262#0" expanded="true" />
+                <element signature="e#2328#2329#0" expanded="true" />
+                <element signature="e#2686#2687#0" expanded="true" />
+                <element signature="e#2759#2760#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -148,13 +177,11 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/search/ProductsCriteriaComponent.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/search/SuccessfulSearchPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/search/UnsuccessfulSearchPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/DropdownMenuComponent.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/data/AccountDropdown.java" />
@@ -181,29 +208,31 @@
         <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/data/head/UnloggedMyAccount.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/data/application/IApplicationSource.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/data/application/ApplicationSource.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/TestResultUtils.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/TestRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/TimeUtils.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/BrowserWrapper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/CaptureUtils.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/RegexUtils.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/ReporterWrapper.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/right/RegistrationSuccessPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/AdminPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/admin/AdminPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/ApplicationTestRunner.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/admin/Kostil.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/AHeadPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/right/AccountLogoutPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/data/user/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/admin/LoginAdminPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/Application.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/right/RegistrationPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/data/application/ApplicationSourceRepository.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/right/UnsuccessfulRegistrationPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/test/RegistrationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/admin/CustomersPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/admin/LoggedAdminPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/AHeadPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/right/RegistrationPage.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/ApplicationTestRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/TestResultUtils.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/RegexUtils.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/TimeUtils.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/ReporterWrapper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/CaptureUtils.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/Application.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/test/RegistrationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/Test.java" />
       </list>
     </option>
   </component>
@@ -219,11 +248,11 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="ThirdDemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="FinalDemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="ThirdDemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="FinalDemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
@@ -244,8 +273,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -286,54 +315,7 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="opencart" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ThirdDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lv354" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="opencart" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ThirdDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lv354" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="opencart" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ThirdDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lv354" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="opencart" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="right" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ThirdDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lv354" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="opencart" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ThirdDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lv354" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="opencart" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -342,10 +324,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545821531789" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545866670297" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/data" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.scopes" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -364,7 +346,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.RegistrationTest">
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="lv354" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RegistrationTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ThirdDemo" />
       <extension name="coverage">
@@ -375,42 +364,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.softserve.edu.opencart.test" />
       <option name="MAIN_CLASS_NAME" value="com.softserve.edu.opencart.test.RegistrationTest" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegistrationTest.boundaryValueOverMaxTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ThirdDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.softserve.edu.opencart.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.softserve.edu.opencart.test" />
-      <option name="MAIN_CLASS_NAME" value="com.softserve.edu.opencart.test.RegistrationTest" />
-      <option name="METHOD_NAME" value="boundaryValueOverMaxTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegistrationTest.checkRegistration" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SecondDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.softserve.edu.opencart.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.softserve.edu.opencart.test" />
-      <option name="MAIN_CLASS_NAME" value="com.softserve.edu.opencart.test.RegistrationTest" />
-      <option name="METHOD_NAME" value="checkRegistration" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -428,6 +381,24 @@
       <option name="PACKAGE_NAME" value="com.softserve.edu.opencart.test" />
       <option name="MAIN_CLASS_NAME" value="com.softserve.edu.opencart.test.RegistrationTest" />
       <option name="METHOD_NAME" value="createDuplicate" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationTest.duplicate" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="lv354" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.softserve.edu.opencart.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.softserve.edu.opencart.test" />
+      <option name="MAIN_CLASS_NAME" value="com.softserve.edu.opencart.test.RegistrationTest" />
+      <option name="METHOD_NAME" value="duplicate" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -455,18 +426,18 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.RegistrationTest" />
-      <item itemvalue="TestNG.RegistrationTest.boundaryValueOverMaxTest" />
-      <item itemvalue="TestNG.RegistrationTest.checkRegistration" />
       <item itemvalue="TestNG.RegistrationTest.createDuplicate" />
       <item itemvalue="TestNG.RegistrationTest.withoutAcceptRegistration" />
+      <item itemvalue="TestNG.RegistrationTest.duplicate" />
+      <item itemvalue="Application.Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
         <item itemvalue="TestNG.RegistrationTest" />
         <item itemvalue="TestNG.RegistrationTest.withoutAcceptRegistration" />
-        <item itemvalue="TestNG.RegistrationTest.checkRegistration" />
+        <item itemvalue="TestNG.RegistrationTest.duplicate" />
         <item itemvalue="TestNG.RegistrationTest.createDuplicate" />
-        <item itemvalue="TestNG.RegistrationTest.boundaryValueOverMaxTest" />
       </list>
     </recent_temporary>
   </component>
@@ -506,34 +477,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RegistrationTest_withoutAcceptRegistration - 2018.12.25 at 21h 50m 04s.xml">
+    <history-entry file="RegistrationTest_duplicate - 2018.12.26 at 17h 53m 08s.xml">
+      <configuration name="RegistrationTest.duplicate" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="RegistrationTest_duplicate - 2018.12.26 at 17h 56m 26s.xml">
+      <configuration name="RegistrationTest.duplicate" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="RegistrationTest_duplicate - 2018.12.26 at 17h 58m 24s.xml">
+      <configuration name="RegistrationTest.duplicate" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="RegistrationTest_duplicate - 2018.12.26 at 18h 02m 42s.xml">
+      <configuration name="RegistrationTest.duplicate" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="RegistrationTest_withoutAcceptRegistration - 2018.12.26 at 18h 34m 49s.xml">
       <configuration name="RegistrationTest.withoutAcceptRegistration" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="RegistrationTest_withoutAcceptRegistration - 2018.12.25 at 21h 53m 18s.xml">
+    <history-entry file="RegistrationTest_withoutAcceptRegistration - 2018.12.26 at 18h 36m 56s.xml">
       <configuration name="RegistrationTest.withoutAcceptRegistration" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="RegistrationTest_withoutAcceptRegistration - 2018.12.25 at 22h 04m 15s.xml">
+    <history-entry file="RegistrationTest_withoutAcceptRegistration - 2018.12.26 at 18h 41m 17s.xml">
       <configuration name="RegistrationTest.withoutAcceptRegistration" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="RegistrationTest_withoutAcceptRegistration - 2018.12.25 at 22h 12m 11s.xml">
+    <history-entry file="RegistrationTest_withoutAcceptRegistration - 2018.12.26 at 18h 43m 16s.xml">
       <configuration name="RegistrationTest.withoutAcceptRegistration" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="RegistrationTest_withoutAcceptRegistration - 2018.12.25 at 22h 19m 37s.xml">
+    <history-entry file="RegistrationTest_withoutAcceptRegistration - 2018.12.26 at 19h 28m 39s.xml">
       <configuration name="RegistrationTest.withoutAcceptRegistration" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="RegistrationTest_withoutAcceptRegistration - 2018.12.25 at 22h 24m 38s.xml">
-      <configuration name="RegistrationTest.withoutAcceptRegistration" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="RegistrationTest_withoutAcceptRegistration - 2018.12.25 at 22h 43m 20s.xml">
-      <configuration name="RegistrationTest.withoutAcceptRegistration" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="RegistrationTest - 2018.12.25 at 22h 51m 07s.xml">
-      <configuration name="RegistrationTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="RegistrationTest - 2018.12.25 at 22h 55m 21s.xml">
-      <configuration name="RegistrationTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="RegistrationTest - 2018.12.26 at 13h 19m 14s.xml">
+    <history-entry file="RegistrationTest - 2018.12.26 at 20h 42m 47s.xml">
       <configuration name="RegistrationTest" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -548,20 +519,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2579425" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31467474" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.3286334" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32733223" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.22258593" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49946696" weight="0.40635267" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.43698853" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49946696" weight="0.40589198" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.329718" />
@@ -578,34 +548,6 @@
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.14901665" />
       <window_info anchor="right" id="Maven" order="8" weight="0.32980332" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22163388" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.3286334" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.3967213" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49946696" weight="0.40635267" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.40238613" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.329718" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.14901665" />
-    </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -617,41 +559,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Save_ThirdDemo_2" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/right/ARightMenuPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/search/UnsuccessfulSearchPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/search/ProductsCriteriaComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/search/ASearchPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/search/SuccessfulSearchPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/MainMenuComponent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -708,19 +615,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/RegexUtils.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/ReporterWrapper.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/TestResultUtils.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/CaptureUtils.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/TimeUtils.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/TestRunner.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/right/AUnloggedRightMenuPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/right/MyAccountPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
@@ -743,32 +638,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="24" selection-start-line="24" selection-end-line="30" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/right/RegistrationSuccessPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/data/application/TestStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/APathBarPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -799,9 +668,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0-sources.jar!/org/openqa/selenium/remote/ErrorHandler.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -837,30 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/data/user/IUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/data/application/ApplicationSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/right/RegistrationPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3675">
-          <caret line="353" column="27" lean-forward="true" selection-start-line="353" selection-start-column="27" selection-end-line="353" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/data/user/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
@@ -872,68 +714,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/data/application/IApplicationSource.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/admin/CustomersPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/BrowserWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="72" column="30" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="73" column="30" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
+        <state relative-caret-position="374">
+          <caret line="26" selection-end-line="55" />
           <folding>
-            <element signature="e#2300#2301#0" expanded="true" />
-            <element signature="e#2340#2341#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/right/UnsuccessfulRegistrationPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/data/application/ApplicationSourceRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/AHeadPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2594#2595#0" expanded="true" />
-            <element signature="e#2625#2626#0" expanded="true" />
-            <element signature="e#2664#2665#0" expanded="true" />
-            <element signature="e#2726#2727#0" expanded="true" />
-            <element signature="e#2761#2762#0" expanded="true" />
-            <element signature="e#2798#2799#0" expanded="true" />
+            <element signature="e#1065#1066#0" expanded="true" />
+            <element signature="e#1139#1140#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/admin/LoggedAdminPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-end-line="42" />
+        <state relative-caret-position="255">
+          <caret line="17" selection-end-line="42" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#649#650#0" expanded="true" />
@@ -946,47 +741,265 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/admin/CustomersPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/right/UnsuccessfulRegistrationPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="26" lean-forward="true" selection-end-line="55" />
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
-            <element signature="e#1065#1066#0" expanded="true" />
-            <element signature="e#1139#1140#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/ApplicationTestRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/data/user/IUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#722#723#0" expanded="true" />
-            <element signature="e#758#759#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-            <element signature="e#861#862#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/admin/LoginAdminPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="75" column="29" selection-end-line="87" />
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-end-line="87" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/data/application/ApplicationSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-253">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/data/application/IApplicationSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/data/application/TestStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/data/application/ApplicationSourceRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/BrowserWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="72" column="30" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/right/AUnloggedRightMenuPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/APathBarPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/right/RegistrationSuccessPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/right/ALoggedRightMenuPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/right/ARightMenuPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/AHeadPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="236" column="5" selection-start-line="236" selection-start-column="5" selection-end-line="236" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2594#2595#0" expanded="true" />
+            <element signature="e#2625#2626#0" expanded="true" />
+            <element signature="e#2664#2665#0" expanded="true" />
+            <element signature="e#2726#2727#0" expanded="true" />
+            <element signature="e#2761#2762#0" expanded="true" />
+            <element signature="e#2798#2799#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/pages/right/RegistrationPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="350" column="26" selection-start-line="350" selection-start-column="26" selection-end-line="350" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/ApplicationTestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="20" column="79" selection-start-line="20" selection-start-column="79" selection-end-line="20" selection-end-column="79" />
+          <folding>
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#758#759#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/RegexUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2261#2262#0" expanded="true" />
+            <element signature="e#2328#2329#0" expanded="true" />
+            <element signature="e#2686#2687#0" expanded="true" />
+            <element signature="e#2759#2760#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/TimeUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+            <element signature="e#761#762#0" expanded="true" />
+            <element signature="e#933#934#0" expanded="true" />
+            <element signature="e#991#992#0" expanded="true" />
+            <element signature="e#1035#1036#0" expanded="true" />
+            <element signature="e#1097#1098#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/TestResultUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="13" column="65" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/CaptureUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
+            <element signature="e#858#859#0" expanded="true" />
+            <element signature="e#1270#1271#0" expanded="true" />
+            <element signature="e#1339#1340#0" expanded="true" />
+            <element signature="e#2808#2809#0" expanded="true" />
+            <element signature="e#2877#2878#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/ReporterWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="55" column="53" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#844#845#0" expanded="true" />
+            <element signature="e#877#878#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
+            <element signature="e#1991#1992#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/tools/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+          <folding>
+            <element signature="e#2300#2301#0" expanded="true" />
+            <element signature="e#2340#2341#0" expanded="true" />
+            <element signature="e#3211#3212#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/2018_12_26_19-28-18_CaptureScreenImage.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/2018_12_26_19-28-17_CaptureSourceCode.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-816" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/edu/opencart/test/RegistrationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="29" lean-forward="true" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+        <state relative-caret-position="780">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
