@@ -23,6 +23,7 @@
 		<!-- - - - - - Test - - - - - -->
 		<org.testng.version>6.14.3</org.testng.version>
 		<maven.surefire.plugin.version>2.22.0</maven.surefire.plugin.version>
+		<ci>false</ci>
 		<!-- - - - - - Automation - - - - - -->
 		<org.seleniumhq.selenium.version>3.14.0</org.seleniumhq.selenium.version>
 		<!-- <org.seleniumhq.selenium.htmlunit-driver>2.26</org.seleniumhq.selenium.htmlunit-driver> -->
@@ -278,6 +279,9 @@
 						<selenium.version>
 							${org.seleniumhq.selenium.version}
 						</selenium.version>
+						<continuous.integration>
+							${ci}
+						</continuous.integration>
 					</systemPropertyVariables>
 					<suiteXmlFiles>
 						<suiteXmlFile>testng3.xml</suiteXmlFile>

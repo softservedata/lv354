@@ -51,7 +51,7 @@ public class LoginApplicationTest extends ApplicationTestRunner {
 	@Story("check_Product_Currency STORY")
     //@Test(dataProvider = "validUsers")
 	//@Test(dataProvider = "validCSVUsers")
-	//@Test(dataProvider = "validExcelUsers")
+	@Test(dataProvider = "validExcelUsers")
     public void checkLogin(IUser validUser) {
     //public void checkLogin(String email, String password, String firstname) {
     	log.info("checkLogin() start");
@@ -95,7 +95,7 @@ public class LoginApplicationTest extends ApplicationTestRunner {
             };
     }
 
-    @Test(dataProvider = "invalidUsers")
+    //@Test(dataProvider = "invalidUsers")
     public void checkLockedUser(IUser invalidUser) {
         // Precondition
         // Steps

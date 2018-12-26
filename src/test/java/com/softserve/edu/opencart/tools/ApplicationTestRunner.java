@@ -20,6 +20,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
 import com.softserve.edu.opencart.data.application.ApplicationSourceRepository;
+import com.softserve.edu.opencart.data.application.IApplicationSource;
+import com.softserve.edu.opencart.data.application.ApplicationSource;
 
 import io.qameta.allure.Attachment;
 
@@ -32,7 +34,13 @@ public class ApplicationTestRunner {
 	public void beforeClass(ITestContext context) {
 		log.info("@BeforeClass start");
 		// Application.get(ApplicationSourceRepository.EpizyChrome());
-		Application.get(ApplicationSourceRepository.localChrome());
+		//Application.get(ApplicationSourceRepository.localChrome());
+		IApplicationSource currentApplicationSource = ApplicationSourceRepository.localChrome();
+		if (!System.getProperty("continuous.integration").equals("false")) {
+			((ApplicationSource) currentApplicationSource)
+				.setBrowserName(BrowserWrapper.Browsers.CHROME_WITHOUTUI.toString());
+		}
+		Application.get(currentApplicationSource);
 		// Application.get(ApplicationSourceRepository.localChromeWithoutUI());
 		log.info("@BeforeClass done");
 	}
