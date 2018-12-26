@@ -79,8 +79,9 @@ public class LoginAdminPage {
         clearPasswordField();
         setPasswordField(admin.getPassword());
     }
-    public void gotoLoggedAdminPage(IUser admin) {
+    public LoggedAdminPage gotoLoggedAdminPage(IUser admin) {
         fillLoginForm(admin);
         clickButton();
+        return new LoggedAdminPage(driver);
     }
 }

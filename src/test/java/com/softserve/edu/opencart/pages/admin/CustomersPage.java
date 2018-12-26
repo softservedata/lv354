@@ -6,13 +6,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class CustomersPage extends LoggedAdminPage {
+public class CustomersPage {
 
     private WebElement selectAll;
     private WebElement deleteButton;
 
+    protected final String TAG_ATTRIBUTE_VALUE = "value";
+
+    protected WebDriver driver;
+
     public CustomersPage (WebDriver driver){
-        super(driver);
+        this.driver=driver;
         initElemets();
     }
 
@@ -39,9 +43,7 @@ public class CustomersPage extends LoggedAdminPage {
     }
 
 
-    public CustomersPage deleteCustomers(IUser admin) {
-        gotoLoggedAdminPage(admin);
-        gotoCustomerPage();
+    public CustomersPage deleteCustomers() {
 
         clickSelectAll();
         clickDeleteButton();

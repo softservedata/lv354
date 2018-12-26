@@ -119,9 +119,9 @@ public class Application {
         return new AccountLogoutPage(getBrowser().getDriver());
     }
 
-    public CustomersPage loadAdmin(){
-        getBrowser().openUrl(applicationSource.getUserLogoutUrl());
-        return new CustomersPage(getBrowser().getDriver());
+    public LoginAdminPage loadAdmin(){
+        getBrowser().openUrl(applicationSource.getBaseUrl());
+        return new LoginAdminPage(getBrowser().getDriver());
     }
 
 }

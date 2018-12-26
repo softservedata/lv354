@@ -13,8 +13,8 @@ public final class ApplicationSourceRepository {
         return new ApplicationSource("ChromeTemporary",
                 ApplicationSourceRepository.class.getResource("/chromedriver-windows-32bit.exe").getPath().substring(1),
                 10,true,
-                "http://192.168.234.130/opencart/upload/",
-                "http://192.168.234.130/opencart/upload/index.php?route=account/logout");
+                "http://taqc-opencart.epizy.com/",
+                "http://taqc-opencart.epizy.com/index.php?route=account/logout");
     }
 
     public static IApplicationSource adminChromeWithoutUI(){
@@ -22,16 +22,16 @@ public final class ApplicationSourceRepository {
                 ApplicationSourceRepository.class.getResource("/chromedriver-windows-32bit.exe").getPath().substring(1)
                 ,10
                 ,true
-                ,"http://192.168.234.130/opencart/upload/admin/index.php?route=common/login"
-                ,"http://192.168.234.130/opencart/upload/admin/index.php?route=common/logout");
+                ,"http://taqc-opencart.epizy.com/admin/"
+                ,"http://taqc-opencart.epizy.com/admin/index.php?route=common/logout");
     }
     public static IApplicationSource adminLocalChrome(){
         return new ApplicationSource("ChromeTemporary",
         ApplicationSourceRepository.class.getResource("/chromedriver-windows-32bit.exe").getPath().substring(1)
-                ,3
+                ,10
                 ,true
-                ,"http://192.168.234.130/opencart/upload/admin/index.php?route=common/login"
-                ,"http://192.168.234.130/opencart/upload/admin/index.php?route=common/logout");
+                ,"http://taqc-opencart.epizy.com/admin/"
+                ,"http://taqc-opencart.epizy.com/admin/index.php?route=common/logout");
 
     }
 

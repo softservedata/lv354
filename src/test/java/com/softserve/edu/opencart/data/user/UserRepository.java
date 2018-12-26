@@ -59,7 +59,7 @@ public final class UserRepository {
 
     public IUser admin() {
         return User.get()
-                .setFirstname("altair")
+                .setFirstname("admin")
                 .setLastname("ahad")
                 .setEMail("msergsi@gmail.com")
                 .setTelephone("0630234560")
@@ -68,7 +68,7 @@ public final class UserRepository {
                 .setPostCode("80800")
                 .setCountry("Ukraine")
                 .setRegionState("Kyiv")
-                .setPassword("aezakmi")
+                .setPassword("Lv3X4_TAQC")
                 .setFax("")
                 .setAddress2("")
                 .setCompany("")

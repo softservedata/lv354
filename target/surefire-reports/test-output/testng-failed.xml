@@ -5,11 +5,12 @@
     <classes>
       <class name="com.softserve.edu.opencart.test.RegistrationTest">
         <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-          <include name="checkLogin" invocation-numbers="0"/>
           <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeClass"/>
+          <include name="withoutAcceptRegistration" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.softserve.edu.opencart.test.RegistrationTest -->
     </classes>

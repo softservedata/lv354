@@ -4,6 +4,10 @@ import com.softserve.edu.opencart.data.user.IUser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.concurrent.TimeUnit;
 
 public class RegistrationPage extends AUnloggedRightMenuPage {
 
@@ -29,6 +33,7 @@ public class RegistrationPage extends AUnloggedRightMenuPage {
     private WebElement confirmPassword;
     private WebElement privatePolicy;
     private WebElement continueButton;
+
 
     private void initElements(){
         firstname = driver.findElement(By.name("firstname"));
@@ -292,80 +297,96 @@ public class RegistrationPage extends AUnloggedRightMenuPage {
     }
 
     // Functional Operations
-    private void fillRegistrationForm(IUser user){
+    private void fillRegistrationForm(IUser user) throws InterruptedException {
         //Type First name
         clickFirstnameField();
         clearFirstnameField();
         setFirstnameField(user.getFirstname());
+        Thread.sleep(1000);
         //Type Last name
         clickLastnameField();
         clearLastnameField();
         setLastnameField(user.getLastname());
+        Thread.sleep(1000);
         //Type E-mail
         clickEMailField();
         clearEMailField();
         setEMailField(user.getEMail());
+        Thread.sleep(1000);
         //Type Telephone
         clickTelephoneField();
         clearTelephoneField();
         setTelephoneField(user.getTelephone());
+        Thread.sleep(1000);
         //Type Fax
         clickFaxField();
         clearFaxField();
         setFaxField(user.getFax());
+        Thread.sleep(1000);
         //Type Company
         clickCompanyField();
         clearCompanyField();
         setCompanyField(user.getCompany());
+        Thread.sleep(1000);
         //Type Address1
         clickAddress1Field();
         clearAddress1Field();
         setAddress1Field(user.getAddress1());
+        Thread.sleep(1000);
         //Type Address2
         clickAddress2Field();
         clearAddress2Field();
         setAddress2Field(user.getAddress2());
+        Thread.sleep(1000);
         //Type City
         clickCityField();
         clearCityField();
         setCityField(user.getCity());
+        Thread.sleep(1000);
         //Type Post Code
         clickPostCodeField();
         clearPostCodeField();
         setPostCodeField(user.getPostCode());
+        Thread.sleep(1000);
         //Type Country
         clickCountryField();
         setCountryField(user.getCountry());
+        Thread.sleep(1000);
         //Type Region State
         clickRegionStateField();
+        Thread.sleep(2000);
         setRegionStateField(user.getRegionState());
         //Type Password
         clickPasswordField();
         clearPasswordField();
         setPasswordField(user.getPassword());
+        Thread.sleep(1000);
         //Type Confirm password
         clickConfirmPasswordField();
         clearConfirmPasswordField();
         setConfirmPasswordField(user.getPassword());
-
+        Thread.sleep(1000);
     }
     // Business Logic
 
-    public RegistrationSuccessPage successRegistration(IUser user) {
+    public RegistrationSuccessPage successRegistration(IUser user) throws InterruptedException {
         fillRegistrationForm(user);
         clickPrivatePolicy();
+        Thread.sleep(1000);
         clickContinueButton();
         return new RegistrationSuccessPage(driver);
     }
 
-    public UnsuccessfulRegistrationPage withoutAccept(IUser user){
+    public UnsuccessfulRegistrationPage withoutAccept(IUser user) throws InterruptedException {
         fillRegistrationForm(user);
+        Thread.sleep(1000);
         clickContinueButton();
         return new UnsuccessfulRegistrationPage(driver);
     }
 
-    public UnsuccessfulRegistrationPage unsuccessfulRegistrationPage(IUser InvalidUser){
+    public UnsuccessfulRegistrationPage unsuccessfulRegistrationPage(IUser InvalidUser) throws InterruptedException {
         fillRegistrationForm(InvalidUser);
+        Thread.sleep(1000);
         clickPrivatePolicy();
         clickContinueButton();
         return new UnsuccessfulRegistrationPage(driver);

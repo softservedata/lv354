@@ -6,8 +6,6 @@ import org.openqa.selenium.WebElement;
 
 public class UnsuccessfulRegistrationPage extends RegistrationPage {
 
-    public final String EXPECTED_WARNING_LOGIN = "Warning: No match for E-Mail Address and/or Password.";
-
     private WebElement alertMessage;
     private WebElement dangerMessage;
 
@@ -18,7 +16,6 @@ public class UnsuccessfulRegistrationPage extends RegistrationPage {
 
     private void initElements() {
         alertMessage = driver.findElement(By.cssSelector(".alert"));
-//        dangerMessage = driver.findElement(By.cssSelector("div.text-danger"));
     }
 
 
@@ -29,10 +26,4 @@ public class UnsuccessfulRegistrationPage extends RegistrationPage {
         return getAlertMessage().getText();
     }
 
-//    public WebElement getDangerMessage(){
-//        return dangerMessage;
-//    }
-//    public String getDangerMessageText(){
-//        return getDangerMessage().getText();
-//    }
 }
