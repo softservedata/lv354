@@ -23,4 +23,11 @@ public class AppTest {
 		Assert.assertTrue(true);
 	}
 
+	@Test
+	public void testApp1() throws Exception {
+		System.out.println("System.getProperty(\"IS_JENKINS\") = " + System.getProperty("IS_JENKINS"));
+		System.out.println("System.getenv().get(\"IS_JENKINS\") = " + System.getenv().get("IS_JENKINS"));
+		System.out.println("pom.xml ci = " + System.getProperty("ci"));
+		System.out.println("System.getenv().database.password = " + System.getenv().get("DATABASE_PASSWORD"));
+	}
 }
