@@ -5,11 +5,12 @@
 
 	<test name="Test1">
 		<classes>
-			<class name="com.softserve.edu.AppTest">
-				<methods>
-					<include name="testApp" />
-				</methods>
-			</class>
+			<class name="com.softserve.edu.AppTest" />
+<!-- 			<class name="com.softserve.edu.AppTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="testApp" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
 <!-- 			<class name="com.softserve.edu.StartTest" /> -->
 		</classes>
 	</test> <!-- Test -->

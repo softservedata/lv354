@@ -27,7 +27,8 @@ public class AppTest {
 	public void testApp1() throws Exception {
 		System.out.println("System.getProperty(\"IS_JENKINS\") = " + System.getProperty("IS_JENKINS"));
 		System.out.println("System.getenv().get(\"IS_JENKINS\") = " + System.getenv().get("IS_JENKINS"));
-		System.out.println("pom.xml ci = " + System.getProperty("ci"));
+		System.out.println("pom.xml continuous.integration = " + System.getProperty("continuous.integration"));
+		System.out.println("pom.xml ci = " + System.getenv().get("ci"));
 		System.out.println("System.getenv().database.password = " + System.getenv().get("DATABASE_PASSWORD"));
 	}
 }
